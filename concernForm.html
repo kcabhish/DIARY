@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DIARY | Minnesota State University Moorhead | Data Input And Reporting Repository</title>
+
+        <!--FavIcon-->
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.mnstate.edu/images/favicon.ico"/>
+
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--StyleSheet-->
+        <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen, projection" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/gridbootstrap.css" media="screen" />
+        <link rel="stylesheet" href="css/colorbox.css" media="screen" />
+        <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+        <link rel="stylesheet" href="css/jquery-ui-1.8.7.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/jquery.qtip.min.css" media="screen" />
+
+        <!--Javascript-->
+        <script type="text/javascript" src="javascript/jquery-1.7.min.js"></script>
+        <script type="text/javascript" src="javascript/jqueryui.js"></script>
+        <script type="text/javascript" src="javascript/jquery.qtip.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.colorbox.js"></script>
+        <script type="text/javascript" src="javascript/library.js"></script>
+        <script type="text/javascript" src="javascript/global.js"></script>
+        <script type="text/javascript" src="javascript/jquery.chained.remote.js"></script>
+        <script type="text/javascript" src="javascript/bootstrap-2.2.2.js"></script>
+        <script type="text/javascript" src="javascript/knockout-2.1.0.js"></script>
+    </head>
+    <body style="background-image:url('images/background.jpg');background-position: center 0px;background-attachment: fixed;background-repeat: repeat;background-repeat: no-repeat;background-color: #2d2926">
+        <div class="container_12 container_white" >
+        <noscript>
+        <div class="error"><h1>Warning!!!</h1>This application requires javascript. Please try switching your browser to Firefox or Internet Explorer 8 + <br> If you are seeing this warning, this application may not run correctly</div>	
+        </noscript>
+        <div class="container_12">
+            <!--[if lt IE 8]><div class="ui-widget"><div class="ui-state-error ui-corner-all" style="padding:.7em;"> <p style="float: left; margin-right:.7em;"><span class="ui-icon ui-icon-alert" ></span> </p><p><strong>Notice:</strong> We strongly recommend you upgrade your browser for additional functionality and better Internet experience.<br>Please upgrade your browser via the <a href="http://www.microsoft.com/windows/Internet-explorer/default.aspx" mce_href="http://www.microsoft.com/windows/Internet-explorer/default.aspx">Microsoft Website</a> or download the latest version of <a href="http://www.mozilla.com/firefox/" mce_href="http://www.mozilla.com/firefox/" >Firefox</a> or <a href="http://www.google.com/chrome" mce_href="http://www.google.com/chrome">Google Chrome.</a></p></div></div><br><![endif]-->
+            <!--[if lt IE 9]><script type="text/javascript" src="../js/selectivizr.js"></script><![endif]--> 
+            <div id="topwrap">
+
+                <div class="grid_5">
+                    <img src="images/logo_small.png" alt="MSUM Logo" style="margin-bottom:10px;">
+                </div>
+                <div class="grid_7">
+                    <h1 style="margin-top:25px;padding:0px;" class="noprint">DIARY <small>Data Input And Reporting Repository</small></h1>
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div>
+        </div><br><!--Main Container for HTML body-->
+
+
+<div class="container_12">
+    <!--Begin of header-->
+    <div class="grid_12">
+        <div class="content-box-header">
+            <h2 class="text-info">Concerns</h2>
+	</div>
+    </div>
+        <div class="clear">&nbsp;</div>
+    
+    <!--End of header-->
+
+    
+    <!--Body Contents-->
+    <div class="grid_9">
+	    <div class="alert-danger">
+		This is a sample code. Links to other area other than provided samples are disabled. Please open submitted files separately to check
+		their functionality or you can use the links below on the breadcrumb for navigation.
+		</div>
+        <!--Begin of navigation bar-->
+        <ul class="breadcrumb">
+            <li>
+               <a href="dashboard.html">Dashboard</a> <span class="divider">/</span>
+            </li>
+            <li> 
+               <a href="coordinatorCourses.html">Coordinator Courses</a> <span class="divider">/</span>
+            </li>
+            <li> 
+               <a href="emailStudents.html" >Email Students</a><span class="divider">/</span>
+            </li>
+			<li > 
+               <a href="student_documents.html">Student Documents</a><span class="divider">/</span>
+            </li>
+			<li class="active"> 
+               <a href="concernForm.html">Concern Form</a><span class="divider">/</span>
+            </li>
+			
+        </ul>
+        <!--End of navigation bar-->
+                <div class="container_9 ">
+            <div class="grid_9">
+                <div class="breadcrumb">
+                    <ul>
+                                                
+                        
+                                                <li><button class="btn btn-mini btn-success" onclick="printConcernForm('print')"><img src="images/printer.gif" height="20px" width="20px"> PRINT </button></li> 
+                        
+                    </ul>
+                </div>
+                
+                <div class="grid_5">
+                    <h3 class="text-error">MSUM Student Concerns and Remediation Referral Form</h3>
+                </div>
+                <div class="subsection" style="float:right">
+                    
+                    <table width="15%">
+                        <tr>
+                            <td><strong>Submitted By:</strong></td>
+                            <td><span id="submittedBy">Abhishek KC</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Submission Date:</strong></td>
+                            <td><span id="submittedDate">Oct 16, 2013 (10:19 am)</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                                                    <span class="label label-success" id="studentNotified">Student Notified on 10/16/2013</span>
+                                                                </td>
+                        </tr>
+                    </table>
+                    
+
+
+            
+            
+                </div>
+            
+            </div>
+        </div>
+        
+        <div id="print">
+        <div class="container_9 ">
+            <div class="grid_9" >
+                <table class="table">
+                    <tr>
+                        <td><strong>Student Name</strong></td>
+                        <td>Abhishek KC</td>
+
+                        <td><strong>Dragon ID#</strong></td>
+                        <td>00298663</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Semester</strong></td>
+                        <td>Fall Semester 2013</td>
+                        <td><strong>Course</strong></td>
+                        <td>Compilers ( CSIS 435 ) </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <hr>
+        
+        
+        <div class="container_9 ">
+            <div class="grid_9">
+                <h3 class="text-info">How the student was observed</h3>
+                    <table class="table">
+                                                        <td>
+                                    <input type="checkbox" name="observe[]" checked value="1" onchange="checkObserve(this)" disabled><strong> University Course </strong>
+                                </td>
+                                                                <td>
+                                    <input type="checkbox" name="observe[]" value="2" onchange="checkObserve(this)" disabled><strong> In a field placement </strong>
+                                </td>
+                                                                <td>
+                                    <input type="checkbox" name="observe[]" value="3" onchange="checkObserve(this)" disabled><strong> Advisor </strong>
+                                </td>
+                                                                <td>
+                                    <input type="checkbox" name="observe[]" value="4" onchange="checkObserve(this)" disabled><strong> Other </strong>
+                                </td>
+                                                                <tr>
+                                    <td><strong>Courses</strong></td>
+                                    <td colspan="3">
+                                        Compilers ( CSIS 435 )                                     </td>
+                                </tr>
+                                            </table>
+
+            </div>
+            <div class="clear"></div>
+            <hr>
+            <div class="grid_9">
+            <h3 class="text-info">Areas of Concerns</h3>
+                            <div class="grid_4 alert">
+                        <span class="text-info">
+                            <strong>Expected Dispositions not displayed by candidate</strong>
+                        </span>
+                        <hr>
+                        1 ) Rapport with peers, faculty and others<br>2 ) Adaptability/Flexibility<br>3 ) Professional Attitude; positive, motivated and enthusiastic<br>                        <hr>
+                    </div>
+            
+                                        <div class="grid_4 alert">
+                        <span class="text-info">
+                            <strong>Expected Knowledge or Skills not displayed by candidate</strong>
+                        </span>
+                        <hr>
+                        1 ) Skills in verbal and/or written communication<br>2 ) Reflection and depth of thought about teaching and learning<br>                        <hr>
+                    </div>
+            
+                                </div>
+            <div class="clear"></div>
+            <hr>
+                            <div class="grid_9">
+                    <h3 class="text-info">Comments</h3>
+                </div>
+                <div class="clear"></div>
+
+                <div class="grid_9 alert-info">
+                    <p>
+	The new concern test</p>
+                </div>
+                <div class="clear"></div>
+                <hr>
+                <!--End of comment section-->
+                                
+                
+                
+            <div class="grid_9" id="concernReview">
+                
+                            <h3 class="text-info">Concern Review</h3>
+                    <div class="adminOption">
+                                                    <div id="displayReviewForm" hidden="true">
+                                <div class="alert alert-warning">
+                                    Edit Mode
+                                    <span class="label label-important" onclick="$('#displayReviewForm').hide();$('#reviewResult').show();" style="float:right;cursor: pointer">X</span>
+                                </div>
+                                <div class="alert alert-warning">
+        <form name="concernResultForm" method="POST" action="../reports/displayStudentConcern.php">
+            <input type="hidden" name="address" value="displayConcernCommittee.php?concernid=164"
+            <div width="40%" style="float:left">
+                                <input type="checkbox" name="concernResult[]" checked="true" id="concernResult0" value="1" onchange="validate()"> Recommended after meeting with student<br>
+                                    <input type="hidden" name="concernId" value="164">
+                
+                                    <input type="checkbox" name="concernResult[]" id="concernResult1" value="2" onchange="validate()"> Recommended with Remediation plan<br>
+                                    <input type="hidden" name="concernId" value="164">
+                
+                                    <input type="checkbox" name="concernResult[]" id="concernResult2" value="3" onchange="validate()"> Not Recommended<br>
+                                    <input type="hidden" name="concernId" value="164">
+                
+                                    <input type="checkbox" name="concernResult[]" id="concernResult3" value="4" onchange="validate()"> 1st form submitted<br>
+                                    <input type="hidden" name="concernId" value="164">
+                
+                                    <input type="checkbox" name="concernResult[]" id="concernResult4" value="5" onchange="validate()"> 2nd form submitted<br>
+                                    <input type="hidden" name="concernId" value="164">
+                
+                                    <input type="checkbox" name="concernResult[]" id="concernResult5" value="6" onchange="validate()"> 3rd form submitted<br>
+                                    <input type="hidden" name="concernId" value="164">
+                
+                                    <input type="checkbox" name="concernResult[]" checked="true" id="concernResult6" value="7" onchange="validate()"> Completed<br>
+                                    <input type="hidden" name="concernId" value="164">
+                
+                                <input type="hidden" name="count" id="count" value="7">
+            
+            <div width="60%" >
+                <hr>
+                <h3 class="text-info">Action Plan:</h3><br>
+                <textarea name="actionPlan" class="span5" id="actionPlan" onkeyup="validate()" rows="5">Test for edit lock test 2
+				</textarea>
+            </div>
+            <div class="clear"></div>
+                <div class="submitbutt">
+                    <button  class="btn btn-mini btn-success">submit</button>
+                </div>
+            </form>
+</div>
+
+            
+        <script type="text/javascript">
+            $(".submitbutt").hide();
+            //This function validates the textarea.
+            //Displays the submit button only if the text area has some contents
+            function validate2(){
+                var actionPlanVal=document.getElementById("actionPlan").value;
+                var len=actionPlanVal.length;
+                
+                if (len==0){
+                    $('.submitbutt').hide();
+                }
+                else{
+                    $('.submitbutt').show();
+                }
+                
+            }
+            //This method validates the check box and the text area and validates the
+            //form to display the submit button.
+            
+            //The submit button only appears when a checkbox is marked or there are
+            //contents in the text area
+            function validate(){
+                
+                var checkCount=0;
+                var idCount=document.getElementById("count").value;
+                //alert (idCount);
+                for (i=0;i<idCount;i++){
+                    var idName="concernResult"+i;
+                    var remember=document.forms["concernResultForm"][idName];
+                   
+                    //var remember=document.getElementById(idName);
+                    //alert (idName);
+                    if (remember.checked){
+                        checkCount++;
+                    }
+                }
+                if (checkCount==0){
+                    $(".submitbutt").hide();
+                    validate2();
+                }
+                else{
+                    $(".submitbutt").show();
+                }
+  
+               
+                 
+                 
+            }
+        </script>
+                                    </div>
+                            <div id="reviewResult">
+                                <button class="btn btn-mini btn-primary" style="float:right" onclick="$('#displayReviewForm').show();$('#reviewResult').hide();">EDIT</button>
+                                        <div class='alert alert-success'>
+            <h3 >Retention in Teacher Education Program</h3>
+        
+        1 ) Recommended after meeting with student <br>2 ) Completed <br>            
+            <hr>
+            <h3>Action Plan</h3>
+            <div class="breadcrumb">
+                Test for edit lock test 2
+            </div>
+            
+        </div>
+                <span class="text-info" style="float:right">
+                Remediation completed successfully on 10/23/2013 2:49:00 PM        </span>
+                                    </div>
+                        
+                        
+                                                </div>
+                            </div>
+            <div class="clear"></div>
+        <!--End of the container_12 div-->
+        </div>
+        <!--End of print div-->
+        </div>
+        <script type="text/javascript">
+             function printConcernForm(id){
+                
+                    var html="<html>";
+                    html+= "<h3>MSUM Student Concerns and Remediation Referral Form</h3><hr>";
+                    html+= "<strong>Submitted By:</strong> "+document.getElementById("submittedBy").innerHTML+"<br>";
+                    html+="<strong>Submitted Date:</strong> "+document.getElementById("submittedDate").innerHTML+"<br>";
+                    html+=document.getElementById("studentNotified").innerHTML+"<hr>";
+                    html+= document.getElementById(id).innerHTML;
+                    html+="</html>";
+
+                    var printWin = window.open('','','left=0,top=0,width=800,height=800,toolbar=0,scrollbars=0,status  =0');
+                    printWin.document.write(html);
+                    printWin.document.close();
+                    printWin.focus();
+                    printWin.print();
+                    printWin.close();
+             }
+        </script>
+     </div>
+    <!--Side Menu Bar-->
+    
+        <div class="grid_3">
+
+
+		
+
+<script>
+    
+    $(function(){
+        // Check the initial Poistion of the Sticky Header
+        var stickyHeaderTop = $('.stickyheader').offset().top;
+
+        $(window).scroll(function(){
+            if( $(window).scrollTop() > stickyHeaderTop ) {
+                $('.stickyheader').css({position: 'fixed', top: '0px'});
+                //                        $('.stickysidebar').css({'margin-top':'50px','z-index':'0'});
+            } else {
+                $('.stickyheader').css({position: 'static', top: '0px'});
+            }
+        });
+    });
+   
+</script>
+
+<div class="noprint stickyheader stickysidebar" style="width: 210px;" >
+    <!--  START OF INSTRUCTOR INFORMATION -->
+    <div>
+        <h6>Instructor Information</h6>
+        <div class="thumbnail">
+            <div class="caption">
+                <a title="Dragon ID: 00298663"><i class="icon-user"></i></a><strong>
+                    Abhishek KC</strong>
+
+                <div id="semesterDisplay">
+                    <h6><a title="YRTR: 20145"><i class="icon-time"></i></a> Spr 2014 
+
+                        <!--need to have this option according to access level-->
+                        <!--NEW CODE ADDED-->
+                        </h6><br><h6><a title='Role'><i class='icon-bookmark'></i></a> Administrator</h6>                    <!--END OF NEW CODES ADDED-->
+                </div>
+
+                <div id="changesemester" style="display:none">
+                    <form action="../reports/dashboard.php?msg=Semester Changed" method="post" id="sltsemester" accept-charset="utf-8" name="semesterchange">
+                        <select name="semester" id="semester" onChange="document.semesterchange.submit()" class="span2">
+                                                    </select>
+                        <input type="hidden" name="type" value="semester">
+                    </form>
+                </div>
+                <a title="Area"><i class="icon-flag"></i></a> <strong>Teaching and Learning</strong>
+            </div>
+        </div>
+        <br>
+            </div>
+    <!-- END OF INSTRUCTOR INFORMATION -->
+
+    <!-- START OF INSTRUCTOR NAVIGATION -->
+    <div class="">
+
+        <h6>Instructor Navigation</h6>
+
+        <ul class="nav nav-tabs nav-stacked" onclick="return warning()">
+            <li><a href="../reports/dashboard.php"><i class="icon-home"></i> Dashboard</a></li>
+            <li><a href="../reports/class_list.php"><i class="icon-list-alt"></i> Class List</a></li>                                <li><a href="../reports/coordinatorCourses.php"><i class="icon-inbox"></i> Coordinator Courses</a></li>
+        </ul>
+
+    </div>
+
+            <div class="">
+            <h6>Administrator Navigation</h6>
+            <ul class="nav nav-tabs nav-stacked" >
+                <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-list"></i> Rubrics <b class="caret"></b></a>
+                    <ul class="dropdown-menu" onclick="return warning()">
+                        <li><a href="../reports/manage_rubric.php"><i class="sprite-folder"></i> Manage Rubric</a></li>
+                        <li class="divider"></li>
+                        <li class="nav-header">Manage Rubric</li>                              
+                        <li><a href="../reports/rubric_list.php"><i class="sprite-book"></i> Rubric List</a></li>
+                        <li><a href="../forms/rubric_edit.php?type=add"><i class="sprite-book_add"></i> Create Rubric</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../reports/manage_rubric.php"><i class="sprite-application"></i> Scale Information</a></li>
+                        <li><a href="../forms/val_scale.php" class="globalmodal" width="450" height="300"><i class="sprite-application_add"></i> Add Scale</a></li>
+                        <li><a href="../forms/rubric_val.php?type=add"><i class="sprite-application_add"></i> Rubric Type</a></li>
+                    </ul>
+                </li>
+                                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th"></i> Standards <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning()">
+                            <li><a href="#../reports/manage_standard.php"><i class="sprite-folder"></i> Manage Standards</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Manage Standards</li>                              
+                            <li><a href="#../reports/standards_list.php"><i class="sprite-application_view_list"></i> Standard List</a></li>
+                        </ul>
+                    </li>
+                                    
+    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-calendar"></i> Placements <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning()">
+                            <li><a href="#../reports/manage_placement.php"><i class="sprite-folder"></i> Manage Placements</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Placements</li>                              
+                            <li><a href="#../reports/person_view.php"><i class="sprite-user_suit"></i> Cooperating Teachers</a></li>
+                            <li><a href="#../reports/location_list.php"><i class="sprite-house"></i> Placement Schools</a></li>
+                            <li><a href="#../reports/viewPlacementList.php"><img src="../images/view.gif" height="18px" width="18px"> Placement List</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Assessments</li>                              
+                            <li><a href="#../reports/AssessmentStatements.php"><i class="sprite-page_white_text"></i> Statements</a></li>
+                            <li><a href="#../reports/PlacementAssessments.php"><i class="sprite-page"></i> Manage Assessments</a></li>
+                            <li><a href="#../forms/PlacementAssessments.php"><i class="sprite-page_add"></i> Create Assessments</a></li>
+                            <li><a href="#../forms/PlacementAssessmentsCopy.php"><i class="icon-share"></i> Copy Assessments</a></li>
+                            <li><a href="#../reports/PreDefinedEmail.php"><i class="sprite-email"></i> Pre-Defined Email</a></li>
+                        </ul>
+                    </li>
+                     
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-briefcase"></i> Applications <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning()">
+                            <li><a href="#../reports/manage_application.php"><i class="sprite-folder"></i> Manage Applications</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Applications</li>                              
+                                <li><a href="#../forms/CreateApplication.php"><i class="sprite-application_add"></i> Create Application</a></li>
+                                <li><a href="#../reports/applicationList.php"><i class="sprite-application_view_list"></i> Application List</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Student Application</li>
+                                 <li><a href="#../reports/submittedApplication.php"><i class="sprite-group"></i> Manage Student Application</a></li>
+                        </ul>
+                    </li>
+    
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Users <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning()">
+                            <li><a href="#../reports/manage_users.php"><i class="sprite-folder"></i> Manage User Access</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Manage User Access</li>                              
+                            <li><a href="#../reports/users.php"><i class="sprite-group"></i> Manage Users</a></li>
+                            <li><a href="#../reports/user_access_admin.php"><i class="sprite-key"></i> Instructor Authorization</a></li>
+                        </ul>
+                    </li>
+    
+                        
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-folder-open"></i> Documents <b class="caret"></b></a>
+                    <ul class="dropdown-menu" onclick="return warning()">
+                        <li><a href="#../reports/admin_documents.php"><i class="sprite-folder"></i> Manage Documents</a></li>
+                        <li><a href="#../reports/importDocuments.php"><i class="sprite-folder"></i> Excel Import</a></li>
+                        <li class="divider"></li>
+                        <li class="nav-header">Manage Document</li>                              
+                        <li><a href="#../reports/admin_documents_add.php?docType=1"><i class="sprite-group"></i> Add Global Document</a></li>
+                        <li><a href="#../reports/admin_documents_add.php?docType=2"><i class="sprite-group"></i> Add Course Document</a></li>
+                        <li><a href="#../reports/admin_documents.php"><i class="sprite-key"></i> Edit Document</a></li>
+                    </ul>
+                </li>
+    
+                        <li><a href="#../reports/search.php"><i class="icon-search"></i> Search Student</a></li>
+    
+            </ul>
+        </div>
+    <hr>
+    <a href="../" class="btn btn-danger right btn-mini">   <i class="icon-ban-circle icon-white"></i> Logout</a>
+    <script type="text/javascript" charset="utf-8">
+        $("#SemesterClick").click(function(){$("#semesterDisplay").hide("fast");$("#changesemester").show("fast");});
+    </script>
+    <br>
+</div>
+    </div>    
+
+		
+
+
+
+
+    <div class="clear">&nbsp;</div>
+    	
+
+<!-- End of Page footer -->
+
+<!-- Page footer -->
+<div class="container_12 noprint">
+    <div id="bottom" class="footer">
+        <p>Copyright &copy; 2013 Information Technology | Minnesota State University Moorhead<br> 1104 7th Ave South | Moorhead, MN 56563 USA <br>Last Updated: 11/22/13 09:23am</p>
+    </div>
+</div>
+</body>
+</html>
+

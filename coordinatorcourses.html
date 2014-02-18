@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DIARY | Minnesota State University Moorhead | Data Input And Reporting Repository</title>
+
+        <!--FavIcon-->
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.mnstate.edu/images/favicon.ico"/>
+
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--StyleSheet-->
+        <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen, projection" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/gridbootstrap.css" media="screen" />
+        <link rel="stylesheet" href="css/colorbox.css" media="screen" />
+        <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+        <link rel="stylesheet" href="css/Aristo/jquery-ui-1.8.7.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/jquery.qtip.min.css" media="screen" />
+
+        <!--Javascript-->
+        <script type="text/javascript" src="javascript/jquery-1.7.min.js"></script>
+        <script type="text/javascript" src="javascript/jqueryui.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/jquery.qtip.min.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/jquery.colorbox.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/library.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/global.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/jquery.chained.remote.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/bootstrap-2.2.2.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/knockout-2.1.0.js?1392683521"></script>
+    </head>
+    <body style="background-image:url('images/background.jpg');background-position: center 0px;background-attachment: fixed;background-repeat: repeat;background-repeat: no-repeat;background-color: #2d2926">
+        <div class="container_12 container_white" >
+        <noscript>
+        <div class="error"><h1>Warning!!!</h1>This application requires javascript. Please try switching your browser to Firefox or Internet Explorer 8 + <br> If you are seeing this warning, this application may not run correctly</div>	
+        </noscript>
+        <div class="container_12">
+            <!--[if lt IE 8]><div class="ui-widget"><div class="ui-state-error ui-corner-all" style="padding:.7em;"> <p style="float: left; margin-right:.7em;"><span class="ui-icon ui-icon-alert" ></span> </p><p><strong>Notice:</strong> We strongly recommend you upgrade your browser for additional functionality and better Internet experience.<br>Please upgrade your browser via the <a href="http://www.microsoft.com/windows/Internet-explorer/default.aspx" mce_href="http://www.microsoft.com/windows/Internet-explorer/default.aspx">Microsoft Website</a> or download the latest version of <a href="http://www.mozilla.com/firefox/" mce_href="http://www.mozilla.com/firefox/" >Firefox</a> or <a href="http://www.google.com/chrome" mce_href="http://www.google.com/chrome">Google Chrome.</a></p></div></div><br><![endif]-->
+            <!--[if lt IE 9]><script type="text/javascript" src="../js/selectivizr.js"></script><![endif]--> 
+            <div id="topwrap">
+
+                <div class="grid_5">
+                    <img src="images/logo_small.png" alt="MSUM Logo" style="margin-bottom:10px;">
+                </div>
+                <div class="grid_7">
+                    <h1 style="margin-top:25px;padding:0px;" class="noprint">DIARY <small>Data Input And Reporting Repository</small></h1>
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div>
+        </div><br>
+<div class="container_12">
+	<div class="grid_12">
+		<div class="content-box-header">
+			<h2>Coordinator Authorized Courses</h2>
+		</div>
+		
+	</div><div class="clear">&nbsp;</div>
+	<div class="grid_9">
+	   <div class="alert-danger">
+		This is a sample code. Links to other area other than provided samples are disabled. Please open submitted files separately to check
+		their functionality or you can use the links below on the breadcrumb for navigation.
+		</div>
+      <!--Begin of navigation bar-->
+        <ul class="breadcrumb">
+            <li>
+               <a href="dashboard.html">Dashboard</a> <span class="divider">/</span>
+            </li>
+            <li class="active"> 
+               <a href="coordinatorCourses.html">Coordinator Courses</a> <span class="divider">/</span>
+            </li>
+            <li> 
+               <a href="emailStudents.html" >Email Students</a><span class="divider">/</span>
+            </li>
+			<li > 
+               <a href="student_documents.html">Student Documents</a><span class="divider">/</span>
+            </li>
+			<li > 
+               <a href="concernForm.html">Concern Form</a><span class="divider">/</span>
+            </li>
+			
+        </ul>
+        <!--End of navigation bar-->
+			
+		
+<div class="content-box-header"><h3><img src='images/college-students.gif' class='middle'/>Class List for Spr 2014</h3></div>	
+	<form action="../reports/change_semester.php?msg=Semester Changed" method="post" id="sltsemester" accept-charset="utf-8" name="semesterchange">
+				<label for="semester"><strong>Semester:</strong> </label>
+					<select name="semester" id="semester" onChange="document.semesterchange.submit()">
+						<option value="">Select a Semester</option><option value="20153">Fall 2014</option>
+<option value="20151">Sum 2014</option>
+<option value="20145" selected="selected">Spr 2014</option>
+<option value="20143">Fall 2013</option>
+<option value="20141">Sum 2013</option>
+<option value="20135">Spr 2013</option>
+<option value="20133">Fall 2012</option>
+<option value="20131">Sum 2012</option>
+<option value="20125">Spr 2012</option>
+<option value="20123">Fall 2011</option>
+<option value="20121">Sum 2011</option>
+<option value="20115">Spr 2011</option>
+<option value="20113">Fall 2010</option>
+<option value="20111">Sum 2010</option>
+<option value="20105">Spr 2010</option>
+<option value="20103">Fall 2009</option>
+<option value="20101">Sum 2009</option>
+<option value="20095">Spr 2009</option>
+<option value="20093">Fall 2008</option>
+<option value="20091">Sum 2008</option>
+<option value="20085">Spr 2008</option>
+<option value="20083">Fall 2007</option>
+<option value="20081">Sum 2007</option>
+<option value="20075">Spr 2007</option>
+<option value="20073">Fall 2006</option>
+<option value="20071">Sum 2006</option>
+<option value="20065">Spr 2006</option>
+<option value="20063">Fall 2005</option>
+<option value="20061">Sum 2005</option>
+<option value="20055">Spr 2005</option>
+<option value="20053">Fall 2004</option>
+<option value="20051">Sum 2004</option>
+<option value="20045">Spr 2004</option>
+<option value="20043">Fall 2003</option>
+<option value="20041">Sum 2003</option>
+<option value="20035">Spr 2003</option>
+<option value="20033">Fall 2002</option>
+<option value="20031">Sum 2002</option>
+<option value="20025">Spr 2002</option>
+<option value="20023">Fall 2001</option>
+<option value="20021">Sum 2001</option>
+<option value="20015">Spring 2001</option>
+<option value="20013">Fall 2000</option>
+<option value="20011">Summer 2000</option>
+<option value="20005">Spring 2000</option>
+<option value="20003">Fall 1999</option>
+<option value="20001">Summer 1999</option>
+<option value="19995">Spring 1999</option>
+<option value="19993">Fall 1998</option>
+<option value="19991">Summer 1998</option>
+<option value="19985">Spring 1998</option>
+<option value="19983">Fall 1997</option>
+<option value="19981">Summer 1997</option>
+<option value="19975">Spring 1997</option>
+<option value="19973">Fall 1996</option>
+<option value="19971">Summer 1996</option>
+<option value="19965">Spring 95-96</option>
+<option value="19963">Fall 1995-96</option>
+					</select>
+					<input type="hidden" name="type" value="semester">
+	</form>
+	
+	<table class='style1' id='appList'><caption>Authorized Courses</caption><thead><tr><th>Course</th></tr></thead><tbody><tr class="box-slide-head" style="cursor:pointer"><td>AMCS270 - American Indian Education</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00009958'><div class='content-box'><p class="clean-padding bt-space5"><div class="notification note-attention">
+			<a title="Close notification" class="close" href="#">close</a>
+			<p>No course were found for the semester</a></p>
+				</div></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>BIOL100 - Issues in Human Biology</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00010040'><div class='content-box'><p class="clean-padding bt-space5"><div class="notification note-attention">
+			<a title="Close notification" class="close" href="#">close</a>
+			<p>No course were found for the semester</a></p>
+				</div></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS335 - Graphical User Interface Programming</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00008870'><div class='content-box'><p class="clean-padding bt-space5"><div class="notification note-attention">
+			<a title="Close notification" class="close" href="#">close</a>
+			<p>No course were found for the semester</a></p>
+				</div></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS430 - Operating Systems</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00008874'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>001759</td><td>Andrew Chen</td><td>MTW F   08:00am - 08:50am</td><td><a href='../reports/course_students.php?courseid=001759' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS435 - Compilers</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00008875'><div class='content-box'><p class="clean-padding bt-space5"><div class="notification note-attention">
+			<a title="Close notification" class="close" href="#">close</a>
+			<p>No course were found for the semester</a></p>
+				</div></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS352 - Advanced Concepts in Programming</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00008879'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>002043</td><td>Daniel Brekke</td><td> ARR - ARR</td><td><a href='#../reports/course_students.php?courseid=002043' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS469 - Internship</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00009319'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>000950</td><td>Daniel Brekke</td><td> ARR - ARR</td><td><a href='#../reports/course_students.php?courseid=000950' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS405 - E-Commerce Technology</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00009693'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>001758</td><td>Yurii Boreisha</td><td> T H    03:00pm - 04:15pm</td><td><a href='#../reports/course_students.php?courseid=001758' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS336 - C#.Net Programming</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00010052'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>000462</td><td>Yurii Boreisha</td><td> T H    12:00pm - 01:15pm</td><td><a href='#../reports/course_students.php?courseid=000462' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS190 - Special Topics</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00010129'><div class='content-box'><p class="clean-padding bt-space5"><div class="notification note-attention">
+			<a title="Close notification" class="close" href="#">close</a>
+			<p>No course were found for the semester</a></p>
+				</div></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS304 - Databases</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00136109'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>000921</td><td>Yurii Boreisha</td><td>M W     03:00pm - 04:15pm</td><td><a href='#../reports/course_students.php?courseid=000921' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS153 - Introduction to Computers and Programming I-b</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00151020'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>001284</td><td>Rhonda Ficek</td><td>M W F   09:00am - 09:50am</td><td><a href='#../reports/course_students.php?courseid=001284' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>001912</td><td>Rhonda Ficek</td><td>M W F   11:00am - 11:50am</td><td><a href='../reports/course_students.php?courseid=001912' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>CSIS340 - Software Engineering</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00151023'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>001364</td><td>Michael Haugrud</td><td>M W F   01:00pm - 01:50pm</td><td><a href='#../reports/course_students.php?courseid=001364' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>EECE481C - Student Teaching: Early Childhood</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00009401'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>000292</td><td>Lisa Staiger</td><td> ARR - ARR</td><td><a href='#../reports/course_students.php?courseid=000292' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>ENGL387 - Technical Report Writing</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00000048'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>001958</td><td>Elizabeth Severn</td><td> T H    04:30pm - 06:10pm</td><td><a href='#../reports/course_students.php?courseid=001958' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>000374</td><td>Ryan Christiansen</td><td> T H    01:30pm - 03:10pm</td><td><a href='../reports/course_students.php?courseid=000374' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>000375</td><td>Ryan Christiansen</td><td>M W     09:00am - 10:40am</td><td><a href='../reports/course_students.php?courseid=000375' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>000557</td><td>Linda Lein</td><td> ARR - ARR</td><td><a href='../reports/course_students.php?courseid=000557' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>000658</td><td>Linda Lein</td><td> ARR - ARR</td><td><a href='../reports/course_students.php?courseid=000658' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>001433</td><td>Linda Lein</td><td> ARR - ARR</td><td><a href='../reports/course_students.php?courseid=001433' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>ENGL201 - English Composition II</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00010073'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>000648</td><td>Katherine Meiners</td><td>M W     12:00pm - 01:15pm</td><td><a href='#../reports/course_students.php?courseid=000648' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>000800</td><td>John Early</td><td>M W     03:00pm - 04:15pm</td><td><a href='../reports/course_students.php?courseid=000800' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>000405</td><td>Elizabeth Severn</td><td> T H    03:00pm - 04:15pm</td><td><a href='../reports/course_students.php?courseid=000405' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>001415</td><td>Dorian Harvey</td><td> ARR - ARR</td><td><a href='../reports/course_students.php?courseid=001415' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>000671</td><td>Elizabeth Rowse</td><td> ARR - ARR</td><td><a href='../reports/course_students.php?courseid=000671' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>HIST379 - Environmental History</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00010742'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>000664</td><td>Nathan Clarke</td><td> ARR - ARR</td><td><a href='#../reports/course_students.php?courseid=000664' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>MATH234 - Introduction to Probability and Statistics</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00010810'><div class='content-box'><p class="clean-padding bt-space5"><h6>Available Courses</h6><table class='table table-striped table-bordered table-condensed'>
+								<thead><tr><th>Course ID</th><th>Instructor</th><th>Meeting Time</th><th></th></tr></thead><tbody><tr><td>001593</td><td>Geok Ng</td><td> T H    12:00pm - 01:15pm</td><td><a href='#../reports/course_students.php?courseid=001593' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>001594</td><td>Geok Ng</td><td> T H    01:30pm - 02:45pm</td><td><a href='../reports/course_students.php?courseid=001594' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>001592</td><td>Carol Okigbo</td><td>M W F   10:00am - 10:50am</td><td><a href='../reports/course_students.php?courseid=001592' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr><tr><td>001649</td><td>Carol Okigbo</td><td>M W F   12:00pm - 12:50pm</td><td><a href='../reports/course_students.php?courseid=001649' title='Click here to view Class list for this Course' class='btn btn-mini btn-primary'><i class='icon-circle-arrow-right icon-white'></i> Go</a></td></tr></tbody><tfoot><tr></tr></tfoot></table></p></div></td></tr><tr class="box-slide-head" style="cursor:pointer"><td>TECH385 - Process Leadership</td></tr><tr><td colspan="5"  class="box-slide-body hidden" id='00002768'><div class='content-box'><p class="clean-padding bt-space5"><div class="notification note-attention">
+			<a title="Close notification" class="close" href="#">close</a>
+			<p>No course were found for the semester</a></p>
+				</div></p></div></td></tr></tbody></table>	</div>
+	
+	<div class="grid_3">
+
+
+		
+
+<script>
+    $(function(){
+        // Check the initial Poistion of the Sticky Header
+        var stickyHeaderTop = $('.stickyheader').offset().top;
+
+        $(window).scroll(function(){
+            if( $(window).scrollTop() > stickyHeaderTop ) {
+                $('.stickyheader').css({position: 'fixed', top: '0px'});
+                //                        $('.stickysidebar').css({'margin-top':'50px','z-index':'0'});
+            } else {
+                $('.stickyheader').css({position: 'static', top: '0px'});
+            }
+        });
+    });
+   
+</script>
+
+<div class="noprint stickyheader stickysidebar" style="width: 210px;" >
+    <!--  START OF INSTRUCTOR INFORMATION -->
+    <div>
+        <h6>Instructor Information</h6>
+        <div class="thumbnail">
+            <div class="caption">
+                <a title="Dragon ID: 00298663"><i class="icon-user"></i></a><strong>
+                    Abhishek KC</strong>
+
+                <div id="semesterDisplay">
+                    <h6><a title="YRTR: 20145"><i class="icon-time"></i></a> Spr 2014 
+
+                        <!--need to have this option according to access level-->
+                        <!--NEW CODE ADDED-->
+                        </h6><br><h6><a title='Role'><i class='icon-bookmark'></i></a> Administrator</h6>                    <!--END OF NEW CODES ADDED-->
+                </div>
+
+                <div id="changesemester" style="display:none">
+                    <form action="../reports/dashboard.php?msg=Semester Changed" method="post" id="sltsemester" accept-charset="utf-8" name="semesterchange" onsubmit="return warning();">
+                        <select name="semester" id="semester" onChange="document.semesterchange.submit()" class="span2">
+                                                    </select>
+                        <input type="hidden" name="type" value="semester">
+                    </form>
+                </div>
+                <a title="Area"><i class="icon-flag"></i></a> <strong>Teaching and Learning</strong>
+            </div>
+        </div>
+        <br>
+            </div>
+    <!-- END OF INSTRUCTOR INFORMATION -->
+
+    <!-- START OF INSTRUCTOR NAVIGATION -->
+    <div class="">
+
+        <h6>Instructor Navigation</h6>
+
+        <ul class="nav nav-tabs nav-stacked" onclick="return warning()">
+            <li><a href="../reports/dashboard.php"><i class="icon-home"></i> Dashboard</a></li>
+            <li><a href="../reports/class_list.php"><i class="icon-list-alt"></i> Class List</a></li>                                <li><a href="../reports/coordinatorCourses.php"><i class="icon-inbox"></i> Coordinator Courses</a></li>
+                                    </ul>
+
+    </div>
+
+            <div class="">
+            <h6>Administrator Navigation</h6>
+            <ul class="nav nav-tabs nav-stacked">
+                                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-list"></i> Rubrics <b class="caret"></b></a>
+                    <ul class="dropdown-menu" onclick="return warning();">
+                        <li><a href="../reports/manage_rubric.php"><i class="sprite-folder"></i> Manage Rubric</a></li>
+                        <li class="divider"></li>
+                        <li class="nav-header">Manage Rubric</li>                              
+                        <li><a href="../reports/rubric_list.php"><i class="sprite-book"></i> Rubric List</a></li>
+                        <li><a href="../forms/rubric_edit.php?type=add"><i class="sprite-book_add"></i> Create Rubric</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../reports/manage_rubric.php"><i class="sprite-application"></i> Scale Information</a></li>
+                        <li><a href="../forms/val_scale.php" class="globalmodal" width="450" height="300"><i class="sprite-application_add"></i> Add Scale</a></li>
+                        <li><a href="../forms/rubric_val.php?type=add"><i class="sprite-application_add"></i> Rubric Type</a></li>
+                    </ul>
+                </li>
+                                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th"></i> Standards <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning();">
+                            <li><a href="../reports/manage_standard.php"><i class="sprite-folder"></i> Manage Standards</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Manage Standards</li>                              
+                            <li><a href="../reports/standards_list.php"><i class="sprite-application_view_list"></i> Standard List</a></li>
+                        </ul>
+                    </li>
+                                    
+    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-calendar"></i> Placements <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning();">
+                            <li><a href="../reports/manage_placement.php"><i class="sprite-folder"></i> Manage Placements</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Placements</li>                              
+                            <li><a href="../reports/person_view.php"><i class="sprite-user_suit"></i> Cooperating Teachers</a></li>
+                            <li><a href="../reports/location_list.php"><i class="sprite-house"></i> Placement Schools</a></li>
+                            <li><a href="../reports/viewPlacementList.php"><img src="../images/view.gif" height="18px" width="18px"> Placement List</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Assessments</li>                              
+                            <li><a href="../reports/AssessmentStatements.php"><i class="sprite-page_white_text"></i> Statements</a></li>
+                            <li><a href="../reports/PlacementAssessments.php"><i class="sprite-page"></i> Manage Assessments</a></li>
+                            <li><a href="../forms/PlacementAssessments.php"><i class="sprite-page_add"></i> Create Assessments</a></li>
+                            <li><a href="../forms/PlacementAssessmentsCopy.php"><i class="icon-share"></i> Copy Assessments</a></li>
+                            <li><a href="../reports/PreDefinedEmail.php"><i class="sprite-email"></i> Pre-Defined Email</a></li>
+                        </ul>
+                    </li>
+                     
+                        <li class="dropdown" onclick="return warning();">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-briefcase"></i> Applications <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../reports/manage_application.php"><i class="sprite-folder"></i> Manage Applications</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Applications</li>                              
+                                <li><a href="../forms/CreateApplication.php"><i class="sprite-application_add"></i> Create Application</a></li>
+                                <li><a href="../reports/applicationList.php"><i class="sprite-application_view_list"></i> Application List</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Student Application</li>
+                                 <li><a href="../reports/submittedApplication.php"><i class="sprite-group"></i> Manage Student Application</a></li>
+                        </ul>
+                    </li>
+    
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Users <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../reports/manage_users.php"><i class="sprite-folder"></i> Manage User Access</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Manage User Access</li>                              
+                            <li><a href="../reports/users.php"><i class="sprite-group"></i> Manage Users</a></li>
+                            <li><a href="../reports/user_access_admin.php"><i class="sprite-key"></i> Instructor Authorization</a></li>
+                        </ul>
+                    </li>
+    
+                        
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-folder-open"></i> Documents <b class="caret"></b></a>
+                    <ul class="dropdown-menu" onclick="return warning();">
+                        <li><a href="../reports/admin_documents.php"><i class="sprite-folder"></i> Manage Documents</a></li>
+                        <li><a href="../reports/importDocuments.php"><i class="sprite-folder"></i> Excel Import</a></li>
+                        <li class="divider"></li>
+                        <li class="nav-header">Manage Document</li>                              
+                        <li><a href="../reports/admin_documents_add.php?docType=1"><i class="sprite-group"></i> Add Global Document</a></li>
+                        <li><a href="../reports/admin_documents_add.php?docType=2"><i class="sprite-group"></i> Add Course Document</a></li>
+                        <li><a href="../reports/admin_documents.php"><i class="sprite-key"></i> Edit Document</a></li>
+                    </ul>
+                </li>
+    
+                        <li><a href="../reports/search.php"><i class="icon-search"></i> Search Student</a></li>
+    
+            </ul>
+        </div>
+    <hr>
+    <a href="../" class="btn btn-danger right btn-mini">   <i class="icon-ban-circle icon-white"></i> Logout</a>
+    <script type="text/javascript" charset="utf-8">
+        $("#SemesterClick").click(function(){$("#semesterDisplay").hide("fast");$("#changesemester").show("fast");});
+    </script>
+    <br>
+</div>		
+	</div>
+	<div class="clear">&nbsp;</div>
+</div>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$("#sltsemester").change(function(){
+			this.submit();
+		});
+		
+		var hash = window.location.hash;
+		//hash = hash.replace('#','');
+		$(hash).show();
+		
+		$('.sample').fixedtableheader();
+	});
+</script>
+
+	
+<!-- Page footer -->
+<div class="container_12 noprint">
+    <div id="bottom" class="footer">
+        <p>Copyright &copy; 2013 Information Technology | Minnesota State University Moorhead<br> 1104 7th Ave South | Moorhead, MN 56563 USA <br>Last Updated: 11/6/13 10:29am</p>
+    </div>
+</div>
+<!-- End of Page footer -->
+</div>
+</body>
+</html>

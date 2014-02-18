@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DIARY | Minnesota State University Moorhead | Data Input And Reporting Repository</title>
+
+        <!--FavIcon-->
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.mnstate.edu/images/favicon.ico"/>
+
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--StyleSheet-->
+        <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen, projection" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/gridbootstrap.css" media="screen" />
+        <link rel="stylesheet" href="css/colorbox.css" media="screen" />
+        <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+        <link rel="stylesheet" href="css/jquery-ui-1.8.7.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/jquery.qtip.min.css" media="screen" />
+
+        <!--Javascript-->
+        <script type="text/javascript" src="javascript/jquery-1.7.min.js"></script>
+        <script type="text/javascript" src="javascript/jqueryui.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/jquery.qtip.min.js?1392683521"></script>
+        <script type="text/javascript" src="javascript/jquery.colorbox.js"></script>
+        <script type="text/javascript" src="javascript/library.js"></script>
+        <script type="text/javascript" src="javascript/global.js"></script>
+        <script type="text/javascript" src="javascript/jquery.chained.remote.js"</script>
+        <script type="text/javascript" src="javascript/bootstrap-2.2.2.js"></script>
+        <script type="text/javascript" src="javascript/knockout-2.1.0.js"></script>
+    </head>
+    <body style="background-image:url('images/background.jpg');background-position: center 0px;background-attachment: fixed;background-repeat: repeat;background-repeat: no-repeat;background-color: #2d2926">
+        <div class="container_12 container_white" >
+        <noscript>
+        <div class="error"><h1>Warning!!!</h1>This application requires javascript. Please try switching your browser to Firefox or Internet Explorer 8 + <br> If you are seeing this warning, this application may not run correctly</div>	
+        </noscript>
+        <div class="container_12">
+            <!--[if lt IE 8]><div class="ui-widget"><div class="ui-state-error ui-corner-all" style="padding:.7em;"> <p style="float: left; margin-right:.7em;"><span class="ui-icon ui-icon-alert" ></span> </p><p><strong>Notice:</strong> We strongly recommend you upgrade your browser for additional functionality and better Internet experience.<br>Please upgrade your browser via the <a href="http://www.microsoft.com/windows/Internet-explorer/default.aspx" mce_href="http://www.microsoft.com/windows/Internet-explorer/default.aspx">Microsoft Website</a> or download the latest version of <a href="http://www.mozilla.com/firefox/" mce_href="http://www.mozilla.com/firefox/" >Firefox</a> or <a href="http://www.google.com/chrome" mce_href="http://www.google.com/chrome">Google Chrome.</a></p></div></div><br><![endif]-->
+            <!--[if lt IE 9]><script type="text/javascript" src="../js/selectivizr.js"></script><![endif]--> 
+            <div id="topwrap">
+
+                <div class="grid_5">
+                    <img src="images/logo_small.png" alt="MSUM Logo" style="margin-bottom:10px;">
+                </div>
+                <div class="grid_7">
+                    <h1 style="margin-top:25px;padding:0px;" class="noprint">DIARY <small>Data Input And Reporting Repository</small></h1>
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div>
+        </div><br><div class="container_12">
+    
+    <div class="content-box-header">
+        <h2 class="text-info">Email Students</h2>
+    </div>
+    
+    
+    
+    <!--Begin of body-->
+    <div class="grid_9">
+        <div class="alert-danger">
+		This is a sample code. Links to other area other than provided samples are disabled. Please open submitted files separately to check
+		their functionality or you can use the links below on the breadcrumb for navigation.
+		</div>
+        <!--Begin of navigation bar-->
+        <ul class="breadcrumb">
+            <li>
+               <a href="dashboard.html">Dashboard</a> <span class="divider">/</span>
+            </li>
+            <li> 
+               <a href="coordinatorCourses.html">Coordinator Courses</a> <span class="divider">/</span>
+            </li>
+            <li class="active"> 
+               <a href="emailStudents.html" >Email Students</a><span class="divider">/</span>
+            </li>
+			<li > 
+               <a href="student_documents.html">Student Documents</a><span class="divider">/</span>
+            </li>
+			<li > 
+               <a href="concernForm.html">Concern Form</a><span class="divider">/</span>
+            </li>
+			
+        </ul>
+        <!--End of navigation bar-->
+        
+        <div class="breadcrumb">
+            <span class="label label-info">PRE DEFINED EMAIL LIST </span>   
+            <br>
+               
+                <!--Option to select predefined emails from the list-->
+                
+               <select name="preDefined" id="preDefined" class="span5" onchange="emailContents(this)">
+                   <option value="">Select Pre-Defined Email</option>
+                                                 <option value="35">  205 Student Placement Letter</option>
+                                                          <option value="43">  Course Specific Docs Upload Directions</option>
+                                                          <option value="40">  Course Specific Documents-students</option>
+                                                          <option value="26">  DIARY updates</option>
+                                                          <option value="23">  Liability Insurance Reminder</option>
+                                                          <option value="29">  Name Tag Order Info</option>
+                                                          <option value="28">  Student Intro Letter  and Picture Reminder</option>
+                                                          <option value="47">  Student Letter-DSA and CDC</option>
+                                                          <option value="50">  Student teaching information</option>
+                                                          <option value="2">  Student- field plcmnt - embed1 notice</option>
+                                                          <option value="6">  Student- field plcmnt - embed2 notice</option>
+                                                          <option value="7">  Student- field plcmnt - embed3 notice</option>
+                                                          <option value="37">  Student-letter for DSA-Sped 463L</option>
+                                                          <option value="11">  TC student teaching placement notice</option>
+                                                          <option value="41">  Twin Cities placement notice to  candidates</option>
+                                            </select>
+                <!-- END OF DROP DOWN MENU TO SELECT PREDEFINED EMAILS-->
+            
+            
+                                   <input type="hidden" name="emailtitlechoice[]" value="205 Student Placement Letter" id="emailTitle35">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	Information regarding your practicum placement for the upcoming semester is now available for you to view by logging into the DIARY system using the following URL. This is not a direct link so you will need to <strong>copy and paste</strong> it into your internet browser. Be sure you are using Mozilla Firefox as your browser!</p>
+<p>
+	<a href=\"\\\" target=\"\\&quot;_blank\\&quot;\">https</a><a href=\"\\\" target=\"\\&quot;_blank\\&quot;\">://msumapps.mnstate.edu/diary/</a><a href=\"\\\" target=\"\\&quot;_blank\\&quot;\">students</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Your cooperating teacher will expect to hear from you this week to make arrangements to begin your practicum. If possible, schedule in at least two hours for each visit in order to make the best use of time for both you and your cooperating teacher. You must complete 32 hours over a minimum of five weeks.</p>
+<p>
+	&nbsp;</p>
+<p>
+	You may call or use email to contact your teacher initially to set up a time to meet. Do not leave a message asking him/her to return your call. You may want to call the school secretary and ask what would be the best time to reach your teacher. Please notify the Field Experience Office if you find out that we have the wrong grade level or any other critical information. We use information provided to us by teachers but sometimes there are changes that we do not have in our data.</p>
+<p>
+	&nbsp;</p>
+<p>
+	You will be required to scan and upload the following three forms in DIARY during the semester. These are listed on your Deadline Checklist (handed out in class). Check for specific due dates. If time allows, you may finish your hours sooner than the specified end date and upload your forms earlier.</p>
+<p>
+	&nbsp;</p>
+<ol>
+	<li>
+		<strong><u>Schedule Information sheet:</u></strong> This form indicates that you&rsquo;ve discussed a schedule with your cooperating teacher and have begun working in the classroom (or will begin soon).</li>
+	<li>
+		<strong><u>Form A:</u></strong>&nbsp; This form verifies your hours of attendance up to approximately midterm.&nbsp;<em>Be sure to add up your hours and record the total before turning it in! Also, before handing Form A in, record those hours on the bottom of Form B</em></li>
+	<li>
+		<strong>&nbsp;<u>Form B:</u> </strong>This form notes the hours logged after midterm. The hours from Forms A&amp;B must equal at least 32 in order for you to pass ED205.</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	Remember&hellip;EACH OF THESE FORMS <strong><u>MUST</u></strong> BE SIGNED BY YOUR COOPERATING TEACHER BEFORE YOU UPLOAD THEM IN DIARY OR THEY WON&rsquo;T BE ACCEPTED!!</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong><em><u>Please read the professionalism criteria below. You will be held accountable for this information.</u></em></strong></p>
+<p>
+	<strong>You are expected to maintain confidentiality and data privacy laws.</strong></p>
+<p>
+	<strong>You are a guest in the cooperating teacher&#39;s classroom. Be respectful and thankful for the opportunity.</strong></p>
+<p>
+	<strong>If you have any concerns or questions during your practicum experience, please contact me. Dealing with an issue proactively is generally most effective. </strong></p>
+<p>
+	<strong>Maintain appropriate boundaries with students, faculty and staff in the building where you are placed. </strong></p>
+<p>
+	<strong>Appropriate professional dress and communication is expected.</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	Please feel free to contact me if you have any further questions regarding this information.<br />
+	<br />
+	Sincerely,<br />
+	&nbsp;</p>
+<p>
+	Kelli Fuchs</p>
+<p>
+	ED205 Practicum Coordinator</p>
+<p>
+	211K Lommen Hall</p>
+<p>
+	&nbsp;<a href=\"\\\">fuchske@mnstate.edu</a></p>
+<p>
+	&nbsp;218-477-2217 (Administrative Assistant&#39;s Office)</p>
+' id="emailBody35">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Course Specific Docs Upload Directions" id="emailTitle43">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p align=\"\\&quot;\\\\&quot;center\\\\&quot;\\&quot;\">
+	<strong>Adding Course Specific Documents in Diary</strong></p>
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 1.&nbsp;&nbsp;&nbsp; From the students dashboard, click on Documents.</p>
+<ol>
+	<li value=\"\\&quot;\\\\&quot;2\\\\&quot;\\&quot;\">
+		The Document History screen will appear.</li>
+</ol>
+<ol>
+	<li value=\"\\&quot;\\\\&quot;3\\\\&quot;\\&quot;\">
+		Click on the Course Specific documents tab.</li>
+</ol>
+<ol>
+	<li value=\"\\&quot;\\\\&quot;4\\\\&quot;\\&quot;\">
+		The courses that have course specific documents will be displayed.&nbsp; Select the course you have documents for.</li>
+</ol>
+<ol>
+	<li value=\"\\&quot;\\\\&quot;5\\\\&quot;\\&quot;\">
+		The course specific documents for the course will appear.</li>
+</ol>
+<ol>
+	<li value=\"\\&quot;\\\\&quot;6\\\\&quot;\\&quot;\">
+		Click upload for the document to be added.&nbsp; The typical document size is 2.0 MB, try to keep it to that.</li>
+</ol>
+<ol>
+	<li value=\"\\&quot;\\\\&quot;7\\\\&quot;\\&quot;\">
+		You will be able to browse and find the document.&nbsp; Only documents that have the following extensions can be uploaded .pdf, .doc, .docx, .tif, .jpeg, .jpg, and .png.</li>
+</ol>
+<ol>
+	<li value=\"\\&quot;\\\\&quot;8\\\\&quot;\\&quot;\">
+		When the document has been uploaded,&nbsp; you will be returned to the Dashboard.&nbsp; To verify that the document has been uploaded, click documents,&nbsp; click course specific documents, click on the course.&nbsp; The document should be listed.&nbsp; If you need to add another one click upload and browse for the other file and upload.&nbsp; They will continue to list under the appropriate file section for as many as you load.</li>
+</ol>
+' id="emailBody43">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Course Specific Documents-students" id="emailTitle40">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	This email is to inform you about Course Specific Documents that you will need to upload into Diary.</p>
+<p>
+	If you have a placement in ED205, EECE 467K/I, and ED398, you will need this information.</p>
+<p>
+	***Practicum Hours Attendance Form A and B</p>
+<p>
+	***Practicum Schecuale Information</p>
+<p>
+	To upload these forms into Diary, go to the Student Diary login page:&nbsp;&nbsp;<u><strong> (copy and paste this link and use Mozilla Firefox)</strong></u></p>
+<p>
+	https://msumapps.mnstate.edu/authenticate/index.php?applicationid=182</p>
+<p>
+	Once you are logged in and are on the Student Dashboard, click on &quot;documents&quot; on the right hand side of the page.</p>
+<p>
+	The next page will list Document History.&nbsp; Click on &quot;Course Specific Documents&quot;, select the course that you need to upload your document for (Ed205, ED398 ect), this will open another window and to the far right of that, you will see a green arrow button.&nbsp; When you click on this, it will allow you to select and upload the document.</p>
+<p>
+	When the document has uploaded successfully, you will see the file name and date of the uploaded document.</p>
+<p>
+	Thank you,</p>
+<p>
+	Field Experience Office</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+' id="emailBody40">
+                                      <input type="hidden" name="emailtitlechoice[]" value="DIARY updates" id="emailTitle26">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	Hello Everyone,</p>
+<p>
+	There are some updates in DIARY that I wanted to make you aware of.&nbsp; First, I will need you add or update your letter of introduction.&nbsp; If you have a letter currently in DIARY, and it is updated, you do not have to make changes, but in order for it to be current for the fall semester, you do need to log into DIARY and click on edit and then submit the letter.</p>
+<p>
+	Also, once you have the email verification of your insurance from EMSP, you will need to copy and paste that into a word document and save that to your desktop, then upload it in DIARY under liability insurance on your details page.&nbsp; There is an upload icon on the far right side of the insurance section.&nbsp; Click this and then browse for your verification document select and click the upload icon again.</p>
+<p>
+	Thanks so much for taking care of these two things as quickly as possible.&nbsp; Contact myself or Tracy Heng hengt@mnstate.edu&nbsp;&nbsp; with any questions.</p>
+<p>
+	Lisa Staiger</p>
+' id="emailBody26">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Liability Insurance Reminder" id="emailTitle23">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	This email is to remind you that you will need to sign up for liability insurance by the time you enter a classroom for a practicum or student teaching this coming semester.&nbsp; You will need to upload your confirmation page to DIARY.</p>
+<p>
+	Here is the link for your convenience: (you may have to <u><strong>copy and paste</strong></u> it into your browser, please use Mozilla Firefox)</p>
+<p>
+	<a href=\"\\\">https://ims.nea.org/HowToJoin/stateStudent.do?mbrType=STUDENT&amp;sea=mn</a></p>
+<p>
+	Once you have this completed, you will receive a confirmation email.&nbsp; You will need to save that as a pdf or word document to your desktop, open up Diary, click on the &quot;documents&quot; button on the right of your screen, this will bring you to another page for uploading.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Thank you,</p>
+<p>
+	Field Experience Office</p>
+' id="emailBody23">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Name Tag Order Info" id="emailTitle29">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	<strong>Name Tag Info:</strong></p>
+<p>
+	Local school districts require that everyone entering a school building wear identification. &nbsp;All MSUM teacher candidates completing a field placement will need to purchase and wear an MSUM name tag at their placement school. &nbsp; Please include the following on your name tag:</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;(Mr./Ms./Mrs.) (first name)&nbsp;(last name) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>
+	&nbsp;MSUM Teacher Candidate</p>
+<p>
+	(when you enter this, it will appear as if it will print all on one line, it will not, the title will be on the 2nd line)</p>
+<p>
+	&nbsp;</p>
+<p>
+	***Name Tags need to be ordered through the MSUM Bookstore website. You can pick it up in the bookstore (shipping will be adjusted to $0)<strong> or</strong> you can have it shipped to your address (shipping will be adjusted to $3).&nbsp; Make sure you have the correct address when placing your order. Please go to:&nbsp;</p>
+<p>
+	<a href=\"\\\" target=\"\\&quot;\\\\&quot;_blank\\\\&quot;\\&quot;\">http://bookstore.mnstate.edu/shop_product_detail.asp?catalog_group_id=Mg&amp;catalog_group_name=R2VuZXJhbCBCb29rcw&amp;catalog_id=303&amp;catalog_name=TmFtZSBUYWdz&amp;pf_id=927&amp;product_name=TXN1bSBOYW1lIFRhZw&amp;type=3&amp;target=shop_product_list.asp</a></p>
+<p>
+	<br />
+	Under product description it reads: &quot;Please put your name as you would like it to read on your name tag in the shipping instructions box before you check out. Shipping will be $3. Please select &#39;SHIPPING - UPS, FEDEX, USPS&#39; and we will change the shipping cost to $3 when processed in the store.&quot; Then select &quot;Quantity&quot; click &quot;+ Add to Cart&quot; select &quot; Checkout&quot; then student will enter &quot;email address &amp; password&quot; this will take student to my cart then select &quot;Checkout&quot; this will take student to shipping instructions &quot;Continue to Payment Info&quot; under &quot;Payment Method&quot; student&#39;s&nbsp; only option is to choose Credit Card then proceed to &quot;Review Your Order&quot;&nbsp; last screen is &quot;Place Order&quot;.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Please place your order in the next week so you will have your MSUM nametag by the first day of your practicum.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Lisa Staiger</p>
+<p>
+	MSUM Director of Field Experience</p>
+<p>
+	&nbsp;</p>
+' id="emailBody29">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Student Intro Letter  and Picture Reminder" id="emailTitle28">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	You are receiving this email as a reminder to complete/update your Introduction Letter.&nbsp; Please &quot;upload&quot; your Letter and Picture into DIARY.</p>
+<p>
+	*****If you did this last semester, please take a moment to now click on the &quot;update&quot; button, your letter should then transfer over to this semester.&nbsp; If you are having problems, contact me.&nbsp; This is the first &quot;change of semesters&quot; that we are going through and finding some issues:(</p>
+<p>
+	Log into&nbsp;Student Diary:</p>
+<p>
+	<strong>Use Mozilla Firefox!!</strong>&nbsp;&nbsp; <u>Copy and paste</u> this link into your browser to access Diary:</p>
+<p>
+	<a href=\"\\\">https://msumapps.mnstate.edu/authenticate/index.php?applicationid=182</a></p>
+<p>
+	Once you are logged in, click on Manage Profile.&nbsp; Then click on Update button at the top, once the Introduction Letter box opens, click on the &ldquo;w&rdquo; (for word) at the top of the box, another box will then open.&nbsp; You can now type in this box OR copy and paste your letter into it.&nbsp; Be sure to click on Update Profile button at the bottom of the page.</p>
+<p>
+	Under the Introduction Letter box, you will see where you can upload your picture, please upload a professional looking type of picture, after this is all complete, click on Update Profile button at the bottom of the page.</p>
+<p>
+	<u><strong>How to Write a Letter of Introduction to your Cooperating Teacher:</strong></u></p>
+<p>
+	Keep in mind this will be his/her first impression of you. Examples of information that can be included are your education, work experience, experience with groups of children, hobbies, and interests. Focus your writing around two or three topics of interest to you. Your letter should be typed and one page in length. Single-space the body and double-space between paragraphs. Carefully edit your letter and have at least one other person proof read it.</p>
+<p>
+	Format:</p>
+<p>
+	Dear Cooperating Teacher:</p>
+<p>
+	I am a (sophomore, junior, senior) at Minnesota State University Moorhead, majoring in (major). I have been assigned to work with you this semester.</p>
+<p>
+	(Remained of Body - Write most recent information first)</p>
+<p>
+	(Thank the teacher for inviting you into their classroom)</p>
+<p>
+	Sincerely,</p>
+<p>
+	(Signature)</p>
+<p>
+	(Typed name)</p>
+<p>
+	&nbsp;</p>
+<p>
+	Thank you,</p>
+<p>
+	Field Experience Office</p>
+<p>
+	&nbsp;</p>
+' id="emailBody28">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Student Letter-DSA and CDC" id="emailTitle47">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	It is now time for you to access Diary and complete your Disposition Self Assessment and the Classroom Demographics and Context assignments.</p>
+<p>
+	Use Mozilla Firefox!!&nbsp; Copy and paste this link into your browser to access Diary:</p>
+<p>
+	https://msumapps.mnstate.edu/authenticate/index.php?applicationid=182</p>
+<p>
+	Once you have logged in, click on placements, then find the placement for which you need to complete the assignments for, click on that arrow at the right.&nbsp; This will bring you to a new page, scroll down the page until you see the assignments to complete, click on the red/yellow curved arrow to get access to it. Please be sure to click on the button at the bottom for completing, it will then be submitted.</p>
+<p>
+	If you have any questions please contact Tracy Heng at hengt@mnstate.edu</p>
+<p>
+	Thank You,</p>
+<p>
+	Field Experience Office</p>
+' id="emailBody47">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Student teaching information" id="emailTitle50">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	Hello Everyone,</p>
+<p>
+	Congratulations, on your readiness to student teach!&nbsp; This is an exciting stage in your preparation at MSUM.&nbsp; I am hard at work securing your student teaching placement(s) for the fall 2013 semester, and all is going well.&nbsp; There are several things that you will need to do, and to know about at this point.</p>
+<p>
+	First, it is time to go into DIARY and update (or add) your professional letter of introduction.&nbsp; This must be done as soon as possible since I will send information out to cooperating teachers shortly and they will view this letter as they decide whether to accept or decline your placement.&nbsp; Please add any current experiences to your letter and also at this point, add some detail about what you have been able to do and learn about in the field and/or in your coursework. It is important to edit carefully and to show enthusiasm about the upcoming experience.&nbsp; You should also check to see that you have upload an appropriate photograph of yourself.&nbsp; Remember this should reflect you as a professional educator and should feature only yourself.&nbsp; Please no other family members, friends or animals, etc. in the picture.</p>
+<p>
+	Second, there is a mandatory student teaching orientation meeting scheduled for<strong> May 7th from 4 - 5:30 PM in CMU 101.&nbsp;</strong> Everyone who plans to student teach in the fall 2013 semester is<strong> required to attend this meeting </strong>and I will verify and keep record of your attendance.&nbsp; I will address all the specifics of student teaching, including requirements and expectations. I will also answer any questions you may have at that time regarding student teaching or your placement.&nbsp; There will also be some important TPA information shared during the meeting as well.&nbsp; Please mark this day and time on your calendar now.&nbsp;</p>
+<p>
+	Finally, we will talk about this at the meeting, however, you will be expected to both purchase insurance and to complete a background check in August, before you begin in your student teaching placement.&nbsp; You cannot do that at this time, but must wait until August to complete these.&nbsp; I just want it to be on your radar.</p>
+<p>
+	I look forward to seeing everyone on May 7th.&nbsp; Have a great last few weeks of the semester.</p>
+<p>
+	Lisa Staiger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Director of Field Experiences</p>
+' id="emailBody50">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Student- field plcmnt - embed1 notice" id="emailTitle2">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	Information regarding your field placement for the upcoming semester is now available for you to view.&nbsp; Copy and paste the following link into your browser.&nbsp; MOZILLA FIREFOX works best.</p>
+<p>
+	<a href=\"\\\">https</a><a href=\"\\\">://msumapps.mnstate.edu/diary/</a><a href=\"\\\">students</a></p>
+<p>
+	<br />
+	Additional information about the specific practicum requirements and expectations can be found at http://web.mnstate.edu/education/embed1_overview.cfm<br />
+	<br />
+	Please feel free to contact me if you have any further questions regarding this information.<br />
+	<br />
+	<br />
+	Sincerely,<br />
+	MSUM Field Experiences Placement Coordinator</p>
+' id="emailBody2">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Student- field plcmnt - embed2 notice" id="emailTitle6">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	Information regarding your field placement for the upcoming semester is now available for you to view.&nbsp; Use the following url address which may need to be copied and pasted into your internet browser.&nbsp; Mozilla Firefox or Internet Explorer will work, but other browsers may not.</p>
+<p>
+	<a href=\"\\\">https</a><a href=\"\\\">://msumapps.mnstate.edu/diary/</a><a href=\"\\\">students</a></p>
+<p>
+	<br />
+	Use your mnstate email log in as user name and password.<br />
+	<br />
+	Please feel free to contact me if you have any further questions regarding this information.<br />
+	<br />
+	<br />
+	Sincerely,<br />
+	MSUM Field Experiences Placement Coordinator</p>
+' id="emailBody6">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Student- field plcmnt - embed3 notice" id="emailTitle7">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	Information regarding your field placement for the upcoming semester is now available for you to view.</p>
+<p>
+	<a href=\"../students\">https</a><a href=\"../students\">://msumapps.mnstate.edu/diary/</a><a href=\"../students\">students</a></p>
+<p>
+	<br />
+	Additional information about the specific practicum requirements and expectations can be found at http://web.mnstate.edu/education/embed3_overview.cfm.<br />
+	<br />
+	Please feel free to contact me if you have any further questions regarding this information.<br />
+	<br />
+	<br />
+	Sincerely,<br />
+	MSUM Field Experiences Placement Coordinator</p>
+' id="emailBody7">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Student-letter for DSA-Sped 463L" id="emailTitle37">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	It is now time for you to access Diary and complete your Disposition Self Assessment.</p>
+<p>
+	Use Mozilla Firefox!!&nbsp; Copy and paste this link into your browser to access Diary:</p>
+<p>
+	https://msumapps.mnstate.edu/authenticate/index.php?applicationid=182</p>
+<p>
+	Once you have logged in, click on placements, then find the placement for which you need to complete the assignments for, click on that arrow at the right.&nbsp; This will bring you to a new page, scroll down the page until you see the assignment to complete. Please be sure to click on the button at the bottom for completing, it will then be submitted.</p>
+<p>
+	If you have any questions please contact Tracy Heng at hengt@mnstate.edu</p>
+<p>
+	Thank You,</p>
+<p>
+	Field Experience Office</p>
+' id="emailBody37">
+                                      <input type="hidden" name="emailtitlechoice[]" value="TC student teaching placement notice" id="emailTitle11">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	Information regarding your Student Teaching/Practicum field placement for the upcoming semester is now available for you to view by logging into the DIARY system using the following URL.&nbsp; This is not a direct link so you will need to copy and paste it into your Internet Browser.&nbsp; The browser that works the best is Mozilla Firefox.</p>
+<p>
+	<a href=\"\\\">https</a><a href=\"\\\">://msumapps.mnstate.edu/diary/</a><a href=\"\\\">students</a></p>
+<p>
+	Please remember that you <strong>must purchase insurance and complete a criminal background check through the field experiences office prior to starting in the classroom.&nbsp; You are expected to prepare detailed lesson plans prior to teaching any class period or content subject throughout your experience.</strong></p>
+<p>
+	Additional information about the specific requirements and expectations of this experience can be found at</p>
+<p>
+	http://web.mnstate.edu/fieldexp/</p>
+<p>
+	If you have not already met your cooperating teacher, we ask that you will make the first contact &nbsp;within the next week or two.&nbsp; You may use email to contact your teacher initially to set up a time to meet them. Do not leave a message asking them to return your call. You could call the secretary and ask what would be the best time to reach your teacher.&nbsp; Please notify the Field Experience Office if you find out that we have the wrong grade level or any critical information.&nbsp; We use information provided to us by teachers but sometimes there are changes that we do not have in our data.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<em><strong>CONGRATULATIONS!&nbsp;&nbsp; Student teaching is the beginning of your career as </strong><strong>a professional educator.</strong></em></p>
+<p>
+	<strong><em><u>Please read the professionalism criteria below.&nbsp; You will be held accountable for this information.</u></em></strong></p>
+<p>
+	<strong>You are required to attend a student teaching orientation prior to beginning in your placement.</strong></p>
+<p>
+	<strong>You will follow the school calendar, not the MSUM calendar.&nbsp; You may not leave your placement early for any reason including courses, work or coaching. </strong></p>
+<p>
+	<strong>You are expected to maintain confidentiality and data privacy laws.</strong></p>
+<p>
+	<strong>You are a guest in the cooperating teacher&#39;s classroom.&nbsp; Be respectful and thankful for the opportunity.</strong></p>
+<p>
+	<strong>If you have any concerns or questions during your student teaching experience, contact your university supervisor.&nbsp; Dealing with an issue proactively is generally most effective. </strong></p>
+<p>
+	<strong>Maintain approriate boundaries with students, faculty and staff in the building where you are placed.&nbsp; </strong></p>
+<p>
+	<strong>Appropriate professional dress and communication is expected.</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	Please feel free to contact me if you have any further questions regarding this information.<br />
+	<br />
+	<br />
+	Sincerely,<br />
+	MSUM Field Experiences Placement Coordinator</p>
+<p>
+	&nbsp;</p>
+' id="emailBody11">
+                                      <input type="hidden" name="emailtitlechoice[]" value="Twin Cities placement notice to  candidates" id="emailTitle41">
+                   <input type="hidden" name="emailBodyChoice[]" value='<p>
+	Information regarding your field placement for the upcoming semester is now available for you to view.&nbsp; Use the following url address to log into our data system. &nbsp; This url may need to be copied and pasted into your internet browser.&nbsp; Mozilla Firefox or Internet Explorer will work, but other browsers may not.</p>
+<p>
+	<a href=\"\\\">https</a><a href=\"\\\">://msumapps.mnstate.edu/diary/</a><a href=\"\\\">students</a></p>
+<p>
+	<br />
+	Use your mnstate email log in as user name and password.<br />
+	<br />
+	Please feel free to contact me if you have any further questions regarding this information.<br />
+	<br />
+	<br />
+	Sincerely,</p>
+<p>
+	Bill Kruschel&nbsp;&nbsp;&nbsp; william.kruschel@mnstate.edu<br />
+	MSUM Field Experiences Placement Coordinator</p>
+' id="emailBody41">
+                                  <!--Generating contents to load up after options are selected from the menu-->
+               
+            </div>
+            <div class="clear"></div>
+            
+            <!--Container for alert messages-->
+            
+            
+                                
+                <!--Begin of container for missing introduction letter-->
+                            
+            <!--End of alert messages-->
+            
+            
+        <div class="container_12 ">
+            <form name="emailStudents" method="POST" action="emailStudentPost.php">
+                <input type="hidden" name="courseid" value="000950">
+            
+                
+            <!--Container for the class list-->
+            <div class="grid_2 breadcrumb" style="height: auto; overflow: auto;max-height:600px">
+                <table class="style1" style="width:130px">
+                    <th style="background-color:#CC0000;color:white"><input type="checkbox" name="toggle" onchange="toggleCheckBox(this)"> CLASS LIST</th>
+                     
+                                                <tr>
+                                <td>
+                                    <input type="checkbox" name="techIdAndEmail[00292351]" value="enninfulje@mnstate.edu" id="student1" onchange="addEmail()"> Enninful, Jeffrey  
+                                </td>
+                            </tr>    
+                                                        <tr>
+                                <td>
+                                    <input type="checkbox" name="techIdAndEmail[00257244]" value="finnemanky@mnstate.edu" id="student2" onchange="addEmail()"> Finneman, Kyle  
+                                </td>
+                            </tr>    
+                                                        <tr>
+                                <td>
+                                    <input type="checkbox" name="techIdAndEmail[11151392]" value="ojofe@mnstate.edu" id="student3" onchange="addEmail()"> Ojo, Festus  
+                                </td>
+                            </tr>    
+                                                        <tr>
+                                <td>
+                                    <input type="checkbox" name="techIdAndEmail[00314862]" value="quammeaa@mnstate.edu" id="student4" onchange="addEmail()"> Quamme, Aaron  
+                                </td>
+                            </tr>    
+                                                        <tr>
+                                <td>
+                                    <input type="checkbox" name="techIdAndEmail[10426935]" value="subedibh@mnstate.edu" id="student5" onchange="addEmail()"> Subedi, Bharat  
+                                </td>
+                            </tr>    
+                                            </table>
+            </div>
+            <!--End of container for the class list-->
+
+            <!--Container for the email contents-->
+            <div class="grid_6 breadcrumb" style="padding-left:15px;margin-left:40px">
+                
+                    
+                <table class="table">
+                    <tr>
+                        <th><h4>From</h4></th>
+                        <td><input type="text" name="emailFrom" value="" style="width:320px"></td>
+                    </tr>
+                    <tr>
+                        <th><h4>To</h4></th>
+                        <td>
+                            <textarea name="emailTo" id="emailTo" style="width:320px;height:auto;max-width: 350px;overflow:hidden" disabled="true"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><h4>Subject</h4></th>
+                        <td><input type="text" name="emailSubject" id="emailSubject" style="width:320px"></td>
+                    </tr>
+                    
+                    <tr class="info" id="personalizeHeader">
+                        <td colspan="2">
+                            <input type="checkbox" name="personalize" id="personalize" value="true" onchange="personalizeEmails(this)"><strong> Personalize Email </strong>
+                            <span id="additionalInfo"></span>
+                        </td>
+                    </tr>
+                </table>
+                <textarea name="emailBody" id="emailBody" ></textarea>
+                <button class="btn btn-success" onclick="return warning()">Send</button>
+                
+            </div>
+            <div class="clear"></div>
+            <!--End of container for the class list-->
+            </form>
+        </div>
+    </div>
+    <!--End of body-->
+    
+    <!--Begin of sidebar-->
+        <div class="grid_3">
+
+
+		
+
+<script>
+    
+    $(function(){
+        // Check the initial Poistion of the Sticky Header
+        var stickyHeaderTop = $('.stickyheader').offset().top;
+
+        $(window).scroll(function(){
+            if( $(window).scrollTop() > stickyHeaderTop ) {
+                $('.stickyheader').css({position: 'fixed', top: '0px'});
+                //                        $('.stickysidebar').css({'margin-top':'50px','z-index':'0'});
+            } else {
+                $('.stickyheader').css({position: 'static', top: '0px'});
+            }
+        });
+    });
+   
+</script>
+
+<div class="noprint stickyheader stickysidebar" style="width: 210px;" >
+    <!--  START OF INSTRUCTOR INFORMATION -->
+    <div>
+        <h6>Instructor Information</h6>
+        <div class="thumbnail">
+            <div class="caption">
+                <a title="Dragon ID: 00298663"><i class="icon-user"></i></a><strong>
+                    Abhishek KC</strong>
+
+                <div id="semesterDisplay">
+                    <h6><a title="YRTR: 20145"><i class="icon-time"></i></a> Spr 2014 
+
+                        <!--need to have this option according to access level-->
+                        <!--NEW CODE ADDED-->
+                        </h6><br><h6><a title='Role'><i class='icon-bookmark'></i></a> Administrator</h6>                    <!--END OF NEW CODES ADDED-->
+                </div>
+
+                <div id="changesemester" style="display:none">
+                    <form action="../reports/dashboard.php?msg=Semester Changed" method="post" id="sltsemester" accept-charset="utf-8" name="semesterchange">
+                        <select name="semester" id="semester" onChange="document.semesterchange.submit()" class="span2">
+                                                    </select>
+                        <input type="hidden" name="type" value="semester">
+                    </form>
+                </div>
+                <a title="Area"><i class="icon-flag"></i></a> <strong>Teaching and Learning</strong>
+            </div>
+        </div>
+        <br>
+            </div>
+    <!-- END OF INSTRUCTOR INFORMATION -->
+
+    <!-- START OF INSTRUCTOR NAVIGATION -->
+    <div class="">
+
+        <h6>Instructor Navigation</h6>
+
+        <ul class="nav nav-tabs nav-stacked" onclick="return warning()">
+            <li><a href="../reports/dashboard.php"><i class="icon-home"></i> Dashboard</a></li>
+            <li><a href="../reports/class_list.php"><i class="icon-list-alt"></i> Class List</a></li>                                <li><a href="../reports/coordinatorCourses.php"><i class="icon-inbox"></i> Coordinator Courses</a></li>
+        </ul>
+
+    </div>
+
+            <div class="">
+            <h6>Administrator Navigation</h6>
+            <ul class="nav nav-tabs nav-stacked" >
+                <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-list"></i> Rubrics <b class="caret"></b></a>
+                    <ul class="dropdown-menu" onclick="return warning()">
+                        <li><a href="../reports/manage_rubric.php"><i class="sprite-folder"></i> Manage Rubric</a></li>
+                        <li class="divider"></li>
+                        <li class="nav-header">Manage Rubric</li>                              
+                        <li><a href="../reports/rubric_list.php"><i class="sprite-book"></i> Rubric List</a></li>
+                        <li><a href="../forms/rubric_edit.php?type=add"><i class="sprite-book_add"></i> Create Rubric</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../reports/manage_rubric.php"><i class="sprite-application"></i> Scale Information</a></li>
+                        <li><a href="../forms/val_scale.php" class="globalmodal" width="450" height="300"><i class="sprite-application_add"></i> Add Scale</a></li>
+                        <li><a href="../forms/rubric_val.php?type=add"><i class="sprite-application_add"></i> Rubric Type</a></li>
+                    </ul>
+                </li>
+                                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th"></i> Standards <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning()">
+                            <li><a href="#../reports/manage_standard.php"><i class="sprite-folder"></i> Manage Standards</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Manage Standards</li>                              
+                            <li><a href="#../reports/standards_list.php"><i class="sprite-application_view_list"></i> Standard List</a></li>
+                        </ul>
+                    </li>
+                                    
+    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-calendar"></i> Placements <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning()">
+                            <li><a href="#../reports/manage_placement.php"><i class="sprite-folder"></i> Manage Placements</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Placements</li>                              
+                            <li><a href="#../reports/person_view.php"><i class="sprite-user_suit"></i> Cooperating Teachers</a></li>
+                            <li><a href="#../reports/location_list.php"><i class="sprite-house"></i> Placement Schools</a></li>
+                            <li><a href="#../reports/viewPlacementList.php"><img src="../images/view.gif" height="18px" width="18px"> Placement List</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Assessments</li>                              
+                            <li><a href="#../reports/AssessmentStatements.php"><i class="sprite-page_white_text"></i> Statements</a></li>
+                            <li><a href="#../reports/PlacementAssessments.php"><i class="sprite-page"></i> Manage Assessments</a></li>
+                            <li><a href="#../forms/PlacementAssessments.php"><i class="sprite-page_add"></i> Create Assessments</a></li>
+                            <li><a href="#../forms/PlacementAssessmentsCopy.php"><i class="icon-share"></i> Copy Assessments</a></li>
+                            <li><a href="#../reports/PreDefinedEmail.php"><i class="sprite-email"></i> Pre-Defined Email</a></li>
+                        </ul>
+                    </li>
+                     
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-briefcase"></i> Applications <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning()">
+                            <li><a href="#../reports/manage_application.php"><i class="sprite-folder"></i> Manage Applications</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Applications</li>                              
+                                <li><a href="#../forms/CreateApplication.php"><i class="sprite-application_add"></i> Create Application</a></li>
+                                <li><a href="#../reports/applicationList.php"><i class="sprite-application_view_list"></i> Application List</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Student Application</li>
+                                 <li><a href="#../reports/submittedApplication.php"><i class="sprite-group"></i> Manage Student Application</a></li>
+                        </ul>
+                    </li>
+    
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Users <b class="caret"></b></a>
+                        <ul class="dropdown-menu" onclick="return warning()">
+                            <li><a href="#../reports/manage_users.php"><i class="sprite-folder"></i> Manage User Access</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Manage User Access</li>                              
+                            <li><a href="#../reports/users.php"><i class="sprite-group"></i> Manage Users</a></li>
+                            <li><a href="#../reports/user_access_admin.php"><i class="sprite-key"></i> Instructor Authorization</a></li>
+                        </ul>
+                    </li>
+    
+                        
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-folder-open"></i> Documents <b class="caret"></b></a>
+                    <ul class="dropdown-menu" onclick="return warning()">
+                        <li><a href="#../reports/admin_documents.php"><i class="sprite-folder"></i> Manage Documents</a></li>
+                        <li><a href="#../reports/importDocuments.php"><i class="sprite-folder"></i> Excel Import</a></li>
+                        <li class="divider"></li>
+                        <li class="nav-header">Manage Document</li>                              
+                        <li><a href="#../reports/admin_documents_add.php?docType=1"><i class="sprite-group"></i> Add Global Document</a></li>
+                        <li><a href="#../reports/admin_documents_add.php?docType=2"><i class="sprite-group"></i> Add Course Document</a></li>
+                        <li><a href="#../reports/admin_documents.php"><i class="sprite-key"></i> Edit Document</a></li>
+                    </ul>
+                </li>
+    
+                        <li><a href="#../reports/search.php"><i class="icon-search"></i> Search Student</a></li>
+    
+            </ul>
+        </div>
+    <hr>
+    <a href="../" class="btn btn-danger right btn-mini">   <i class="icon-ban-circle icon-white"></i> Logout</a>
+    <script type="text/javascript" charset="utf-8">
+        $("#SemesterClick").click(function(){$("#semesterDisplay").hide("fast");$("#changesemester").show("fast");});
+    </script>
+    <br>
+</div>
+    </div>
+	<div class="clear"></div>
+	
+
+</div>
+</body>
+</html>
+<script type="text/javascript" src="javascript/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="javascript/ckeditor/adapters/jquery.js"></script>
+<script type="text/javascript">
+    var studentCount=5;
+    addEmail();
+    var predefinedEvent=document.getElementById("preDefined");
+    if (predefinedEvent.value!=""){
+        emailContents(predefinedEvent);
+    }
+    
+    //Adds the subject and body of the email in the form
+    function emailContents(event){
+        var eventValue=event.value;
+        //Removes the check marked from the personalize checkbox and changes to original color
+        document.getElementById("personalize").checked=false;
+        document.getElementById("personalizeHeader").className="info";
+        document.getElementById("additionalInfo").innerHTML="";
+        
+        if (eventValue!="" || eventValue!=null){
+            var idTitle="emailTitle"+eventValue;
+            var idBody="emailBody"+eventValue;
+            var emailTitle=document.getElementById(idTitle).value;
+            var emailBody=document.getElementById(idBody).value;
+            $("#emailSubject").val(emailTitle);
+            $("#emailBody").val(emailBody);
+        }
+        else{
+            
+            $("#emailSubject").val();
+            $("#emailBody").val();
+        }
+        
+    }
+    
+    //Selects or deselects all the class list from the menu
+    function toggleCheckBox(event){
+        if (event.checked){
+            for (i=1;i<=studentCount;i++){
+            tempId="student"+i;
+            document.getElementById(tempId).checked=true;
+            }
+            
+        }
+        else{
+            for (i=1;i<=studentCount;i++){
+            tempId="student"+i;
+            document.getElementById(tempId).checked=false;
+            }
+        }
+        addEmail();
+    }
+    
+    
+    //Adds email ids to the form of the selected students
+    function addEmail(){
+        var emailInfo="";
+        checkedEmailCount=0;
+        for (i=1;i<=studentCount;i++){
+            tempId="student"+i;
+            checked=document.getElementById(tempId).checked;
+            email=document.getElementById(tempId).value;
+            if (checked){
+                if (checkedEmailCount==0){
+                    emailInfo=email;
+                }
+                else{
+                    emailInfo+="; "+email;
+                }
+                checkedEmailCount++;
+            }
+            
+        }
+        var textareaId=document.getElementById('emailTo');
+        $("#emailTo").val(emailInfo);
+        //textareaId.style.height="300px";
+        textareaId.style.height = ""; /* Reset the height*/
+        textareaId.style.height = Math.min(textareaId.scrollHeight, 300) + "px";
+        
+    }
+    
+    
+    $( 'textarea#emailBody' ).ckeditor(
+         {width: "465",height: "400" }
+    );
+        
+        //This function adds the student name template at the head of the email body
+        function personalizeEmails(event){
+            if (event.checked){
+                $("#additionalInfo").html("<hr><p class='text-info'>Below is the template of the email. [Student Name] will be replaced by the name of the individuals included in\n\
+                                                the email once the email is sent.</p>");
+                document.getElementById("personalizeHeader").className="success";
+                var tempEmailBody="[Student Name]<br>"+$("#emailBody").val();
+                $("#emailBody").val(tempEmailBody);
+            }
+            else{
+                $("#additionalInfo").html("");
+                $("#emailBody").val("");
+                
+                var emailid=$("#preDefined").val();
+                var idBody="emailBody"+emailid;
+                var tempEmailBody=$("#"+idBody).val();
+                $("#emailBody").val(tempEmailBody);
+                document.getElementById("personalizeHeader").className="info";
+            }
+        }
+    
+</script>

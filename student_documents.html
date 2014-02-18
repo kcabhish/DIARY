@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>School of Teaching &amp; Learning | Student Area</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MSUM DIARY Student Area">
+    
+    <!--FavIcon-->
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.mnstate.edu/images/favicon.ico"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui-1.8.7.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    
+    <!--Javascript-->
+    <script type="text/javascript" src="javascript/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="javascript/prettify.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap-2.2.2.js"></script>
+    <script type="text/javascript" src="javascript/application.js"></script>
+    <script type="text/javascript" src="javascript/library.js"></script>
+    <script type="text/javascript" src="javascript/global.js"></script>
+   <script>$(function () { prettyPrint() })</script>
+  </head>
+
+ <body style="background-image:url('images/background.jpg');background-position: center 0px;background-attachment: fixed;background-repeat: repeat;background-repeat: no-repeat;">
+ <noscript><br><br><br><div class="alert-message block-message error container"><h1>Warning!!!</h1>This application requires javascript. Please try switching your browser to Firefox or Internet Explorer 8 + <br> If you are seeing this warning, this application may not run correctly</div></noscript>
+ <div class="container" style="border-bottom: 4px solid #A6192E;background-image: url('../images/headerBack.jpg');background-repeat: repeat-x;">
+     <div class="row">
+         <div class="span4">
+             <img src="images/logo_small.png" alt="MSUM Logo" style="margin: 10px;">		
+         </div>
+         <div class="span8">
+             <h1 style="margin-top:30px;padding:0px;">DIARY <small>Data Input And Reporting RepositorY</small></h1>
+         </div>
+     </div>
+ </div>
+
+		
+
+<link rel="stylesheet" href="css/jquery_ui_student_doc.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<script type="text/javascript" src="javascript/jquery_ui_1.8.2_student_doc.js"></script>
+<script type="text/javascript" src="javascript/jquery_ui_ver_1.9.1_student_doc.js"></script>
+
+
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<script>
+    //This function is used for creating tabs    
+    $(function() {
+        $( ".tabs" ).tabs();
+        $( ".accordion" ).accordion({
+            active:false,
+            collapsible: true,
+            icons: false,
+            animate: "easeOutBack",
+            heightStyle: "content"
+        });
+    });
+</script>
+<style script='text/css'>
+    td{
+        background-color:#F0F0F0;
+    }
+    th{
+        background-color:#CCCCCC;
+    }
+    .success{
+        color:#009000;
+    }
+    .fail{
+        color:#CC0000;
+    }
+    .text-info {
+        color: #3a87ad;
+    }
+    .alert{
+        /*color: #3a87ad;*/
+        color:black;
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+     }
+    button.btn,
+    input[type="submit"].btn {
+        *padding-top: 3px;
+        *padding-bottom: 3px;
+      }
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9;
+}
+</style>
+<script type="text/javascript" src="includes/sortable.js">
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="page-header">
+                <h2>Document History</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span9">
+            <!--Begin of navigation bar-->
+	    <div class="alert-danger">
+		This is a sample code. Links to other area other than provided samples are disabled. Please open submitted files separately to check
+		their functionality or you can use the links below on the breadcrumb for navigation.
+		</div>
+        <ul class="breadcrumb">
+            <li>
+               <a href="dashboard.html">Dashboard</a> <span class="divider">/</span>
+            </li>
+            <li> 
+               <a href="coordinatorCourses.html">Coordinator Courses</a> <span class="divider">/</span>
+            </li>
+            <li> 
+               <a href="emailStudents.html" >Email Students</a><span class="divider">/</span>
+            </li>
+			<li class="active"> 
+               <a href="student_documents.html">Student Documents</a><span class="divider">/</span>
+            </li>
+			<li > 
+               <a href="concernForm.html">Concern Form</a><span class="divider">/</span>
+            </li>
+			
+        </ul>
+        <!--End of navigation bar-->
+            <!--TESTING JQUERY-->
+                        <div class="tabs">
+                <ul>
+                    <li><a href="#docType1">Global</a></li><li><a href="#docType2">Course Specific</a></li>                </ul>
+                
+                                <div id="docType1">
+                    <!--CRATING TABS FOR ACTIVE, INACTIVE and DISPLAY ALL-->
+                    <div class='tabs'>
+                        <ul>
+                            <li><a href="#active">Active</a></li>
+                            <li><a href="#inactive">Inactive</a></li>
+                            <li><a href='#all'>Display All</a></li></ul>
+
+
+                        <!--BEGIN OF ACTIVE TABS FOR GLOBAL-->
+                        <div id='active'>
+                                                        <div class='accordion'>
+                                                                    <h3>
+                                        Liability Insurance                                        
+                                    </h3>
+                                    <div>
+                                        <table class='sample' onclick="return warning();">
+                                            <th >SN</th>
+                                            <th >Document</th>
+                                            
+                                            <th  > Status</th>
+                                            <th  >Issued Date</th>
+                                            <th  >Expiration Date</th>
+                                            <th  >Date Added</th>
+                                            <!--BODY OF THE TABLE FOR DOCUMENTS-->
+                                                                                                                <tr class='success'><td bgcolor='#F0F0F0' >1</td>
+                                                                <td bgcolor='#F0F0F0'><a href='#/documents/STL/otherdocuments/Liability Insurance_670_10.jpg' TARGET='_blank'><font color='#009000'>Liability Insurance_670_10.jpg</font></a></td>
+
+                                                                <td bgcolor='#F0F0F0'><a title='active'><img src='images/accept.png'></a></td>
+                                                                <td bgcolor='#F0F0F0'>Nov 06,2013</td>
+                                                                <td bgcolor='#F0F0F0'>Dec 27,2013</td>
+                                                                <td bgcolor='#F0F0F0'>Nov 06,2013</td>
+                                                                                                                            
+                                                    <!--END OF BODY OF THE TABLE FOR THE DOCUMENTS-->
+                                                    </table>
+                                                                                                        <center><a class="btn btn-success" title='Upload Liability Insurance' href='upload_documents.php?docType=1&docid=1'><img src='images/doc_upload.png'>Upload</a></center>
+                                                    
+                                                                            </div>
+                                                                        <h3>
+                                        Background Check                                        
+                                    </h3>
+                                    <div>
+                                                                                <table class='sample' onclick="return warning();">
+                                            <th >SN</th>
+                                            <th >Document</th>
+                                            
+                                            <th  > Status</th>
+                                            <th  >Issued Date</th>
+                                            <th  >Expiration Date</th>
+                                            <th  >Date Added</th>
+                                            <!--BODY OF THE TABLE FOR DOCUMENTS-->
+                                                                                                                <tr class='success'><td bgcolor='#F0F0F0' >1</td>
+                                                                <td bgcolor='#F0F0F0'><a href='/documents/STL/otherdocuments/Background Check_670_77.docx' TARGET='_blank'><font color='#009000'>Background Check_670_77.docx</font></a></td>
+
+                                                                <td bgcolor='#F0F0F0'><a title='active'><img src='images/accept.png'></a></td>
+                                                                <td bgcolor='#F0F0F0'>Nov 07,2013</td>
+                                                                <td bgcolor='#F0F0F0'>Aug 21,2014</td>
+                                                                <td bgcolor='#F0F0F0'>Nov 07,2013</td>
+                                                                                                                            
+                                                    <!--END OF BODY OF THE TABLE FOR THE DOCUMENTS-->
+                                                    </table>
+                                                                                                        <center><a class="btn btn-success" title='Upload Background Check' href='upload_documents.php?docType=1&docid=2'><img src='images/doc_upload.png'>Upload</a></center>
+                                                    
+                                                                            </div>
+                                                                    
+                            </div>
+                            <!--End of accordian-->
+                            
+
+                            <!--End of Active Tab for global-->    
+                        </div>
+
+
+                        <!--BEGIN OF INACTIVE TAB FOR GLOBAL DOCS-->
+                        <div id='inactive'>
+
+                            <table class='sample' onclick="return warning();">
+                                <th  >SN</th>
+                                <th  >Document</th>
+                                <th  >Document Type</th>
+                                <th  >Status</th>
+                                <th  >Issued Date</th>
+                                <th  >Expiration Date</th>
+                                <th  >Date Added</th>
+                                <!--BODY OF THE TABLE FOR DOCUMENTS-->
+            <tr class='fail'><td>1</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_3.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_3.jpg</font></a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 01,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 01,2013</td>
+                    <tr class='fail'><td>2</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_4.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_4.jpg</font></a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 01,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 01,2013</td>
+                    <tr class='fail'><td>3</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_5.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_5.jpg</font></a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class='fail'><td>4</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_6.docx' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_6.docx</font></a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class='fail'><td>5</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_7.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_7.jpg</font></a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class='fail'><td>6</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_8.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_8.jpg</font></a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class='fail'><td>7</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_9.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_9.jpg</font></a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class='fail'><td>8</td>
+            <td><a href='/documents/STL/otherdocuments/Background Check_670_76.docx' TARGET='_blank'><font color='#CC0000'>Background Check_670_76.docx</font></a></td>
+            <td>Background Check</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 07,2013</td>
+            <td>Aug 21,2014</td>
+            <td>Nov 07,2013</td>
+          
+                                    <!--END OF BODY OF THE TABLE FOR THE DOCUMENTS-->
+                            </table>
+
+
+
+                        </div>
+                        <!--END OF INACTIVE TAB-->
+
+
+                        <!--Displays all the Global files uploaded by the student-->
+                        <div id='all'>
+
+
+                            <table class='sample' onclick="return warning();">
+                                <th  >SN</th>
+                                <th  >Document</th>
+                                <th  >Document Type</th>
+                                <th  >Status</th>
+                                <th  >Issued Date</th>
+                                <th  >Expiration Date</th>
+                                <th  >Date Added</th>
+                                <!--BODY OF THE TABLE FOR DOCUMENTS-->
+            <tr class="fail"><td>1</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_3.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_3.jpg</a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 01,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 01,2013</td>
+                    <tr class="fail"><td>2</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_4.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_4.jpg</a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 01,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 01,2013</td>
+                    <tr class="fail"><td>3</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_5.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_5.jpg</a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class="fail"><td>4</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_6.docx' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_6.docx</a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class="fail"><td>5</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_7.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_7.jpg</a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class="fail"><td>6</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_8.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_8.jpg</a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class="fail"><td>7</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_9.jpg' TARGET='_blank'><font color='#CC0000'>Liability Insurance_670_9.jpg</a></td>
+            <td>Liability Insurance</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class="success"><td>8</td>
+            <td><a href='/documents/STL/otherdocuments/Liability Insurance_670_10.jpg' TARGET='_blank'><font color='#009000'>Liability Insurance_670_10.jpg</a></td>
+            <td>Liability Insurance</td>
+            <td><a title='active'><img src='images/accept.png'></a></td>
+            <td>Nov 06,2013</td>
+            <td>Dec 27,2013</td>
+            <td>Nov 06,2013</td>
+                    <tr class="fail"><td>9</td>
+            <td><a href='/documents/STL/otherdocuments/Background Check_670_76.docx' TARGET='_blank'><font color='#CC0000'>Background Check_670_76.docx</a></td>
+            <td>Background Check</td>
+            <td><a title='Inactive/Expired'><img src='images/cancel.png'></a></td>
+            <td>Nov 07,2013</td>
+            <td>Aug 21,2014</td>
+            <td>Nov 07,2013</td>
+                    <tr class="success"><td>10</td>
+            <td><a href='/documents/STL/otherdocuments/Background Check_670_77.docx' TARGET='_blank'><font color='#009000'>Background Check_670_77.docx</a></td>
+            <td>Background Check</td>
+            <td><a title='active'><img src='images/accept.png'></a></td>
+            <td>Nov 07,2013</td>
+            <td>Aug 21,2014</td>
+            <td>Nov 07,2013</td>
+          
+                                    <!--END OF BODY OF THE TABLE FOR THE DOCUMENTS-->
+                            </table>
+
+
+
+
+
+                        </div>
+                        <!-- END OF SECTION TO DISPLAY ALL THE GLOBAL FILES-->
+
+                    </div>
+                    
+
+
+
+
+
+                </div>
+                                <!--END OF COURSE SPECIFIC DOCUMENT TAB-->
+                                <!--END OF GLOBAL DOCS TAB-->
+                
+                <!--BEGIN OF COURSE SPECIFIC DOCUMENTS-->
+                <div id="docType2">
+                    <div class='accordion'>
+                                        <!--END OF ACCORDION-->        
+                    </div>
+                    
+                </div>
+                                <!--END OF COURSE SPECIFIC DOCUMENT TAB-->
+                
+            </div>
+
+            <!--TILL HERE End of testing Jquery-->
+            <!--FROM HERE ARE THE CODES TO FORM OF UPLOAD FILES-->
+
+
+
+        </div>
+
+        <div class="span3">
+                            
+
+
+<div style="padding-right: 12px;">
+<h6>Student Information</h6>
+<div class="noprint thumbnail">
+    <div class="caption">
+
+        Welcome <br><a title="Dragon ID: 00298663     /    DIARY ID: 670"><i class="icon-user"></i></a><b>Abhishek KC</b><br><br>
+        <div id="semesterDisplay">
+            <i class="icon-time"></i> Spr 2014 <a href="javascript:void(0)" class="small btn btn-mini" id="SemesterClick" title="Click here to change semester"><i class="icon-cog"></i></a>
+        </div>
+        <div id="changesemester" style="display:none">
+            <form action="../students/dashboard.php?msg=Semester Changed" method="post" id="sltsemester" accept-charset="utf-8" name="semesterchange">
+                <label for="semester"><strong>Semester:</strong> </label>
+                <select name="semester" id="semester" class="span2" onChange="document.semesterchange.submit()">					
+<option value="">Select a Semester</option><option value="20085">Spr 2008</option>
+<option value="20093">Fall 2008</option>
+<option value="20095">Spr 2009</option>
+<option value="20103">Fall 2009</option>
+<option value="20105">Spr 2010</option>
+<option value="20113">Fall 2010</option>
+<option value="20115">Spr 2011</option>
+<option value="20123">Fall 2011</option>
+<option value="20125">Spr 2012</option>
+<option value="20131">Sum 2012</option>
+<option value="20133">Fall 2012</option>
+<option value="20135">Spr 2013</option>
+<option value="20143">Fall 2013</option>
+			
+                </select>
+                <input type="hidden" name="type" value="semester">
+            </form>
+        </div>
+        <div id="areaDescription">
+            <br><strong>Teaching and Learning</strong>            <a href="javascript:void(0)" id="changeAreaClick"class="btn btn-mini" title="Click here to change the department"><i class="icon-cog"></i></a>
+        </div>
+        <div id="changeArea" style="display:none">
+            <br>
+            <form name="changeArea" method="POST" action="selectArea.php">
+                <select name="areaid" class="span2" onChange="document.changeArea.submit()">
+                    
+                                                <option value="1" selected="true">Teaching and Learning                                                        <option value="2">Social Work                                            </select> 
+            </form>
+        </div>    
+    </div>
+</div>
+
+
+<h6>Student Navigation</h6>
+<ul class="nav nav-tabs nav-stacked" onclick="return warning();">
+    <li><a class="nav-item" href="../students/dashboard.php"><i class="home"></i> Dashboard</a></li>
+    <li><a class="nav-item" href="../students/view_profile.php"><i class="user"></i> Manage Profile</a></li>
+    <li><a class="nav-item" href="../students/rubric_assessment_list.php"><i class="th"></i> View Assessments</a></li>
+    <li><a class="nav-item" href="../students/placements.php"><i class="book"></i> Placements</a></li>
+    <li><a class="nav-item" href="../students/document_view.php"><i class="icon-file"></i> Documents</a></li>
+    <li><a class="nav-item" href="../students/applicationList.php"><i class=" icon-list-alt"></i> Application</a></li>
+</ul>
+
+<a href="../students/login.php?logout=1" class="btn btn-danger"><i class=" icon-ban-circle icon-white"></i> Logout</a>
+<script type="text/javascript" charset="utf-8">
+			
+    $("#SemesterClick").click(function(){
+        $("#semesterDisplay").hide("fast");
+        $("#changesemester").show("fast");
+    });
+    
+    $("#changeAreaClick").click(function(){
+       $("#areaDescription").hide("fast");
+       $("#changeArea").show("fast");
+    });
+</script>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+                    
+    <div class="container" >
+    <footer class="footer" style="border-top: 4px solid #A6192E;">
+        <p class="pull-right" style="margin-right: 20px;"><a href="#">Back to top</a></p>
+       <p style="color: #999;font-size: 11px;">Copyright &copy; 2013 Minnesota State University Moorhead<br> 1104 7th Ave South | Moorhead, MN 56563 USA | 1.800.593.7246<br>Last Updated: 11/22/13 09:24am			</p>
+      </footer>
+    </div><!-- /container -->
+
+
+
+
+</body>
+</html>
